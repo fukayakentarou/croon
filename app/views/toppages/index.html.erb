@@ -1,3 +1,28 @@
-<div class="maintitle">
-<p>Le film</p>
+<% if logged_in? %>
+<div class="row">
+  <div class="col-12 five-image"></div>
 </div>
+
+<div class="row">
+  <div class="col-3 first-image"></div>
+  <div class="col-6 four-image"></div>
+  <div class="col-3 second-image"></div>
+</div>
+<div class="row">
+  <div class="col-12 third-image"></div>
+</div>
+
+  
+<% else %>
+<div id="main_visual">
+  <div class="row">
+  <section class="hoge"><img src="images/Collage_Fotor.jpg"></section>
+</div>
+</div>
+<% end %>
+<footer>
+    <small>&copy; 2019 Le film.</small>
+</footer>
+
+
+
