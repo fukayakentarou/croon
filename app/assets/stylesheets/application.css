@@ -131,7 +131,8 @@ footer  {
 }
 
 .search {
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* item */
@@ -153,4 +154,14 @@ p.movie-title {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.movie .panel-body {
+  height: 120px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
+}
+
+
+.movie .buttons form {
+  display: inline-block;
+  margin: 0 5px;
 }

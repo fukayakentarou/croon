@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
   
-  resources :movies, only: [:new]
- 
+  resources :movies, only: [:new, :show]
+  resources :likes, only: [:create, :destroy]
+  resources :reviews, only: [:create, :destroy]
 end

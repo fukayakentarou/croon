@@ -4,7 +4,11 @@
             <ul>
                 <li>名前: <%= current_user.name %></li>
                 <li>Email: <%= current_user.email %></li>
+                
             </ul>
+            
         </div>
     </div>
 </div>
+
+<%= render "movies/movies", movies: @movies %>

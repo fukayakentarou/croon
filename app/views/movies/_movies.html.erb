@@ -10,7 +10,17 @@
                     <img src="<%= 'https://image.tmdb.org/t/p/w500/' + movie.poster_path %>" alt="" >
                 </div>
                 <div class="panel-body">
+                    <% if movie.persisted? %>
+                    <p class="movie-title"><%= link_to movie.title, movie_path(movie) %></p>
+                    <% else %>
                     <p class="movie-title"><%= movie.title %></p>
+                    <% end %>
+                    
+                    <div class="buttons text-center">
+                        <% if logged_in? %>
+                        <%= render 'likes/like_button', movie: movie %>
+                        <% end %>
+                    </div>
                 </div>
             </div>
         </div>
@@ -18,3 +28,6 @@
     <% end %>
 </div>
 <% end %>
+
+
+
