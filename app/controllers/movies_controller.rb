@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
     @like_users = @movie.users
     @review = current_user.reviews.build  # form_for 用
     @reviews = current_user.reviews.order('created_at DESC').page(params[:page])
-    
+    @reviews = @movie.reviews.page(params[:page])
   end
   
   

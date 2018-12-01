@@ -6,6 +6,13 @@
         <div>
           <%= link_to review.user.name, user_path(review.user) %> <span class="text-muted">posted at <%= review.created_at %></span>
         </div>
+        
+        <% if controller_name == "reviews" && action_name == "index" %>
+        <div>
+          <%= link_to review.movie.title, movie_path(review.movie) %> 
+        </div>
+        <% end %>
+        
         <div>
           <p><input type="hidden" name="movie_id" value="movie.id"></p>
         </div>
@@ -17,7 +24,6 @@
         <% if current_user == review.user %> 
         <%= link_to "レビューを削除する", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
         <% end %>
-          
         </div>
       </div>
     </li>

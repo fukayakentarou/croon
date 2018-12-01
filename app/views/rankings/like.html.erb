@@ -1,0 +1,27 @@
+<% if @movies.present? %>
+  <div class="row">
+    <% @movies.each_with_index do |movie, index| %>
+      <div class="movie">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+              <img src="<%= 'https://image.tmdb.org/t/p/w500/' + movie.poster_path %>" alt="">
+            </div>
+            <div class="panel-body">
+              <p class="movie-title"><%= link_to movie.title, movie %></p>
+              <div class="buttons text-center">
+                <% if logged_in? %>
+                  <%= render 'likes/like_button', movie: movie %>
+    
+    <% end %>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <p class="text-center"><%= index+1 %>位: <%= @ranking_counts[movie.id] %> Likes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

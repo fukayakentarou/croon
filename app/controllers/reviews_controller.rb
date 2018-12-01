@@ -3,8 +3,7 @@ class ReviewsController < ApplicationController
   before_action :correct_user, only: [:destroy]
   
   def index
-  @review = current_user.reviews.build  # form_for 用
-  @reviews = current_user.reviews.order('created_at DESC').page(params[:page])  
+    @reviews = Review.all.page(params[:page])
   end
 
   def create
