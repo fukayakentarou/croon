@@ -7,14 +7,10 @@ class User < ApplicationRecord
                       format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i },
                       uniqueness: { case_sensitive: false }
                 
-    
     has_many :likes
     has_many :like_movies, through: :likes, source: :movie
-    
     has_many :reviews
    
-    
-
     def like(movie)
         self.likes.find_or_create_by(movie_id: movie.id)
     end
@@ -27,7 +23,4 @@ class User < ApplicationRecord
     def like?(movie)
         self.like_movies.include?(movie)
     end
-    
-    
-    
 end

@@ -135,10 +135,7 @@ footer  {
     margin-bottom: 20px;
 }
 
-/* item */
-.movie .panel-body {
-  height: 70px;
-}
+
 
 .movie .panel-heading {
   height: 250px;
@@ -164,4 +161,49 @@ p.movie-title {
 .movie .buttons form {
   display: inline-block;
   margin: 0 5px;
+}
+
+.media-body {
+    border-bottom: 2px solid gray;
+
+}
+
+.name{
+    color: blue;
+}
+
+.title{
+    color: blue;
+}
+
+.content{
+    color: blue;
+}
+
+.user{
+    color: blue;
+}
+
+.name:hover {
+    color: red;
+}
+
+.title:hover {
+    color: red;
+}
+
+p {
+    margin: auto;
+    padding: auto;
+    width: 650px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+p.important {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1E90FF;
 }

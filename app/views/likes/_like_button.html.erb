@@ -5,11 +5,10 @@
     <%= hidden_field_tag :like, 'like' %>
     <%= submit_tag 'Unlike', class: 'btn btn-success' %>
   <% end %>
-<% else %>
+  <% else %>
   <%= form_tag(likes_path) do %>
     <%= hidden_field_tag :movie_code, movie.code %>
     <%= hidden_field_tag :like, 'like' %>
     <%= submit_tag 'like it', class: 'btn btn-primary' %>
-    
   <% end %>
 <% end %>

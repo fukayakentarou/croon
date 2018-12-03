@@ -7,9 +7,9 @@
         </div>
         <div class="panel-body">
           <p class="movie-title"><%= @movie.title %></p>
-          <div class="buttons text-center">
+            <div class="buttons text-center">
             <%= render 'likes/like_button', movie: @movie %>
-          </div>
+            </div>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
         <div class="panel-body">
           <% @like_users.each do |user| %>
-            <%= link_to user.name, user_path(user) %>
+            <%= link_to user.name, user_path(user), { :class => "user"} %>
           <% end %>
         </div>
       </div>

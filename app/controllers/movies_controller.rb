@@ -20,7 +20,6 @@ class MoviesController < ApplicationController
       @search.fetch
       results = @search.fetch.first(20)
       
-      
       results.each do |result|
         movie = Movie.find_or_initialize_by(read(result))
         @movies << movie
