@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   
   resources :movies, only: [:new, :show]
   resources :likes, only: [:create, :destroy]
-  resources :reviews, only: [:index, :create, :destroy]
+  resources :reviews, only: [:index, :edit, :update, :create, :destroy]
   
   get 'rankings/like', to: 'rankings#like'
 end

@@ -192,7 +192,7 @@ p.movie-title {
     color: red;
 }
 
-p {
+.play{
     margin: auto;
     padding: auto;
     width: 650px;

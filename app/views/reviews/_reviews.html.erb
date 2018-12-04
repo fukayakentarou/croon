@@ -22,10 +22,11 @@
         <div>
           <% if current_user == review.user %> 
           <%= link_to "レビューを削除する", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
+          <%= link_to "レビューを編集する", edit_review_path(review), class: "btn btn-danger btn-xs" %>
         　<% end %>
         </div>
       </div>
     </li>
   <% end %>
-  <%= paginate reviews %>
+  <%= paginate  reviews %>
 </ul>

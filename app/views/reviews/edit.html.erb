@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offset-3">
+<h1>id: <%= @review.id %>の編集ページ</h1>
+<%= form_for(@review) do |f| %>
+    <%= f.label :content, 'レビュー' %>
+    <%= f.text_area :content, class: 'form-control', rows: 9 %>
+
+  　<%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
+</div>
+<% end %>
+

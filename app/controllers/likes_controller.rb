@@ -15,7 +15,7 @@ class LikesController < ApplicationController
       current_user.like(@movie)
       flash[:success] = '商品をlikeしました。'
     end
-      redirect_to root_path
+      redirect_back(fallback_location: root_path)
   end
     
 
@@ -29,6 +29,6 @@ class LikesController < ApplicationController
       current_user.unlike(@movie) 
       flash[:success] = '商品のlikeを解除しました。'
     end
-      redirect_to root_path
+      redirect_back(fallback_location: root_path)
   end
 end

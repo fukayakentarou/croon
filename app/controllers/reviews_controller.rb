@@ -5,7 +5,23 @@ class ReviewsController < ApplicationController
   def index
     @reviews = Review.all.page(params[:page])
   end
+  
+  def edit
+     @review = Review.find_by(id: params[:id])
+  end
+  
+  def update
+    @review = Review.find_by(id: params[:id])
 
+    if @review.update(review_params)
+      flash[:success] = 'Message は正常に更新されました'
+      redirect_to @review.movie
+    else
+      flash.now[:danger] = 'Message は更新されませんでした'
+      render :edit
+    end
+  end
+  
   def create
     @review = current_user.reviews.build(review_params)
     
