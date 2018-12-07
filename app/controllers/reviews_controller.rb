@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
   before_action :correct_user, only: [:destroy]
   
   def index
-    @reviews = Review.all.page(params[:page])
+    @reviews = Review.all.page(params[:page]).per(10)
   end
   
   def edit
@@ -31,6 +31,7 @@ class ReviewsController < ApplicationController
       redirect_to @movie
     else
       @movie = @review.movie
+      @like_users = @movie.users
       @reviews = @movie.reviews.order('created_at DESC').page(params[:page])
       flash.now[:danger] = 'reviewの投稿に失敗しました。'
       render 'movies/show'

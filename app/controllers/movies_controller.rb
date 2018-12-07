@@ -13,6 +13,7 @@ class MoviesController < ApplicationController
   def new
     @movies = []
     @keyword = params[:keyword]
+    if @keyword.present?
     if params[:keyword]
       @search = Tmdb::Search.new
       @search.resource('movie')
@@ -24,6 +25,7 @@ class MoviesController < ApplicationController
         movie = Movie.find_or_initialize_by(read(result))
         @movies << movie
       end
+    end
     end
   end
 end
