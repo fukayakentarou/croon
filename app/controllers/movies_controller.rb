@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
   
   def new
     @movies = []
+    @movies = Kaminari.paginate_array(@movies).page(params[:page]).per(20)
     @keyword = params[:keyword]
     if @keyword.present?
     if params[:keyword]
