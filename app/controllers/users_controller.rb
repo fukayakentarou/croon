@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @movies = @user.like_movies
+    @movies = Kaminari.paginate_array(@movies).page(params[:page]).per(20)
     @count_like = @user.like_movies.count
   end
 
