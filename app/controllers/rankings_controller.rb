@@ -2,6 +2,7 @@ class RankingsController < ApplicationController
   def like
     @ranking_counts = Like.ranking
     @movies = Movie.find(@ranking_counts.keys)  
+    @movies = Kaminari.paginate_array(@movies).page(params[:page]).per(20)
   end
 end
 

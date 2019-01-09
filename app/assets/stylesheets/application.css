@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
 #header_top {
     background-color: black;
     height: 80px;
@@ -21,6 +37,7 @@
     color: white;
     font-size: 20px;
     font-weight: bolder;
+    
 }
 
 #header_nav {
@@ -33,6 +50,7 @@
     height: 40px;
     margin: 10px 0px 0px 0px;
     padding-left: 0px;
+    
 }
 
 ul li {
@@ -80,55 +98,9 @@ footer  {
 }
 
 
-.five-image{
-    height: 100px;
-    background-image: url(/images/eigakan1_Fotor1208.jpg);
-    background-size:cover;
-    background-repeat : no-repeat;
-    padding: 0;
-    margin: 0;
-}
 
 
-.first-image{
-    width: 15%;
-    height: 800px;
-    float: left;
-    background-image: url(/images/eigakan1_Fotor23.jpg);
-    background-size:cover;
-    background-repeat : no-repeat;
-    margin-top: -100px;
-    
-    
-}
-.four-image{
-    width: 60%;
-    background-color: white;
-    height: 700px;
-    float: left;
-    background-size:cover;
-    padding: 0;
-    margin: 0;
-}
-.second-image{
-    width: 15%;
-    height: 800px;
-    float: right;
-    background-image: url(/images/eigakan1_Fotor_right.jpg);
-    background-size:cover;
-    background-repeat : no-repeat;
-    margin-top: -100px;
-   
-}
-.third-image{
-    clear: both;
-    height: 200px;
-    background-image: url(/images/eigakan1_Fotor8.jpg);
-    background-size:cover;
-    background-repeat : no-repeat;
-    padding: 0;
-    margin: 0;
-}
+
 
 .search {
     margin-top: 20px;
@@ -206,4 +178,20 @@ p.important {
     text-align: center;
     font-weight: bold;
     color: #1E90FF;
+}
+
+.hoge {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+/*body {*/
+
+/*background-image: url(/images/eigakan1.jpg);*/
+/*}*/
+
+.animated {
+    opacity: 0;
 }

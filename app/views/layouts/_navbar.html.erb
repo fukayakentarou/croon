@@ -1,10 +1,10 @@
 <div id="header">
     <div id="header_top">
     <a href="/"><span id="header_title">Le film</span></a><br><span id="header_copy">価値観を共有したいあなたへ</span>
-　　</div>
-　　
+    </div>
+
         <% if logged_in? %>
-　　        <ul class="nav navbar-nav navbar-left">
+            <ul class="nav navbar-nav navbar-left">
                 <li><%= link_to 'レビュー一覧', reviews_path, class: 'btn btn-lg btn-default' %></li>
                 <li><%= link_to 'movie検索', new_movie_path, class: 'btn btn-lg btn-default' %></li>
             </ul>
@@ -16,6 +16,7 @@
             <ul class="dropdown-menu">
                 <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default' %></li>
                 <li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-lg btn-default' %></li>
+                
             </ul>
             </ul>
             <nav>
@@ -32,4 +33,5 @@
             
         <% end %>
         </nav>
+        
 </div>
