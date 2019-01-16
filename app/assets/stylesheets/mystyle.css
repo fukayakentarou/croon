@@ -1,0 +1,236 @@
+#header_top {
+    background-color: black;
+    height: 80px;
+    text-align: center;
+}
+
+#header_title {
+    
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bolder;
+    
+}
+
+#header_top a:hover{
+    color: #D3D3D3;
+}
+
+#header_copy {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+#header_nav {
+    height: 60px ;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#header_nav ul {
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+    padding-left: 0px;
+    
+}
+
+ul li {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 5px;
+    padding-left: 3rem;
+    margin-right: 5px;
+    padding-right: 3rem;
+}
+
+
+#header {
+    height: 155px;
+    min-width: 1300px;
+    background-color:black ;
+}
+
+
+.hoge img {
+    width:1440px;
+    
+}
+
+.row {
+    
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+footer  {
+    background-color: black;
+    text-align: center;
+    font-size: 40px;
+    color: #1E90FF;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+
+
+
+
+
+
+.search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.movie .panel-heading {
+  height: 250px;
+}
+
+.movie .panel-heading img {
+  height: 100%;
+  max-width: 100%;
+}
+
+p.movie-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.movie .panel-body {
+  height: 120px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
+}
+
+
+.movie .buttons form {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.media-body {
+    border-bottom: 2px solid gray;
+
+}
+
+.name{
+    color: blue;
+}
+
+.title{
+    color: blue;
+}
+
+.content{
+    color: black;
+}
+
+.user{
+    color: blue;
+}
+
+.name:hover {
+    color: red;
+}
+
+.title:hover {
+    color: red;
+}
+
+.play{
+    margin: auto;
+    padding: auto;
+    width: 650px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+p.important {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1E90FF;
+}
+
+.hoge {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+body.sessions_new  {
+    padding: 0px;
+    background-image: url(/images/eigakan1.jpg);
+    background-size: 100vw 100vh;
+}
+
+body.users_new {
+    padding: 0px;
+    background-image: url(/images/eigakan1.jpg);
+    background-size: 100vw 100vh;
+}
+
+.animated {
+    opacity: 0;
+}
+
+
+.movie img:hover {
+  /* 1.1倍に拡大する */
+transform: scale(1.2);
+}
+
+#contact {
+    background-color: skyblue;
+    color: black;
+    height: 180px;
+   
+}
+
+#contact ul {
+  margin-bottom: 0;
+  text-align: center
+  
+}
+
+
+
+#contact h2 {
+    font-size: 40px;
+    color: #1E90FF;
+    text-align: center
+}
+
+#contact ul li {
+    margin: 0px auto;
+    list-style: none;
+    color: red;
+    display: inline-block;
+}
+
+.news {
+    margin-top: 45px;
+    text-align: center
+    
+}
+
+.news ul li i {
+  font-size: 5rem;
+}
+
+.text-center {
+    padding: 10px;
+}
