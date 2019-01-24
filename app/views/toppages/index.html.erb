@@ -1,5 +1,10 @@
 <% if logged_in? %>
 <div class="row">
+  <div class="mozi">
+  <ul>
+    <li>お気に入りされた映画</li>
+  </ul>
+  </div>
   <%= render "movies/movies", movies: @movies %>
 </div>
 
@@ -9,7 +14,7 @@
 <% else %>
 <div id="main_visual">
   <div class="row">
-  <section class="hoge"><img src="images/Collage_Fotor.jpg" alt="Movie"></section>
+  <section class="hoge"><img src="images/Collage_Fotor.jpg" class="img-responsive" alt="Movie"></section>
   </div>
 </div>
 <% end %>
