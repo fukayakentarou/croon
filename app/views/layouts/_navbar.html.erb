@@ -3,66 +3,66 @@
     <a href="/" data-turbolinks="false"><span id="header_title">Le film</span></a><br><span id="header_copy">価値観を共有したいあなたへ</span>
     </div>
 
-        <!--<% if logged_in? %>-->
-        <!--    <ul class="nav navbar-nav navbar-left">-->
-        <!--        <li><%= link_to 'レビュー一覧', reviews_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--        <li><%= link_to 'movie検索', new_movie_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--    </ul>-->
-        <!--    <ul class="nav navbar-nav navbar-right">-->
-        <!--        <li><%= link_to 'ランキング', rankings_like_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--        <li class="dropdown">-->
-        <!--        <a href="#" class="dropdown-toggle btn btn-lg btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.name %> <span class="caret"></span></a>-->
-            
-        <!--    <ul class="dropdown-menu">-->
-        <!--        <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default' %></li>-->
-        <!--        <li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-lg btn-default' %></li>-->
-                
-        <!--    </ul>-->
-        <!--    </ul>-->
-
-        <!--<% else %>-->
-        <!--<nav>-->
-            
-        <!--    <ul class="nav navbar-nav navbar-left">-->
-        <!--        <li><%= link_to '概要・使い方', explanation_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--    </ul>-->
-            
-            
-        <!--    <ul class="nav navbar-nav navbar-right">-->
-        <!--        <li><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--        <li><%= link_to 'ログイン', login_path, class: 'btn btn-lg btn-default' %></li>-->
-        <!--    </ul>-->
-        <!--</nav>          -->
-        <!--<% end %>-->
-        
         <% if logged_in? %>
-        <div class="menu-left">
-            <ul>
+            <ul class="nav navbar-nav navbar-left">
                 <li><%= link_to 'レビュー一覧', reviews_path, class: 'btn btn-lg btn-default' %></li>
                 <li><%= link_to 'movie検索', new_movie_path, class: 'btn btn-lg btn-default' %></li>
             </ul>
-        </div>
-        <div class="menu-right">
-            <ul>
+            <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to 'ランキング', rankings_like_path, class: 'btn btn-lg btn-default' %></li>
-                <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default' %></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle btn btn-lg btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.name %> <span class="caret"></span></a>
+            
+            <ul class="dropdown-menu">
+                <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default', data: {"turbolinks" => false} %></li>
                 <li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-lg btn-default' %></li>
+                
             </ul>
-        </div>
+            </ul>
+
         <% else %>
-        <div class="menu-left">
-            <ul>
+        <nav>
+            
+            <ul class="nav navbar-nav navbar-left">
                 <li><%= link_to '概要・使い方', explanation_path, class: 'btn btn-lg btn-default' %></li>
             </ul>
-        </div>
-        
-        <div class="menu-right">
-            <ul>
+            
+            
+            <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-default' %></li>
                 <li><%= link_to 'ログイン', login_path, class: 'btn btn-lg btn-default' %></li>
             </ul>
-        </div>
+        </nav>          
         <% end %>
+        
+        <!--<% if logged_in? %>-->
+        <!--<div class="menu-left">-->
+        <!--    <ul>-->
+        <!--        <li><%= link_to 'レビュー一覧', reviews_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--        <li><%= link_to 'movie検索', new_movie_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+        <!--<div class="menu-right">-->
+        <!--    <ul>-->
+        <!--        <li><%= link_to 'ランキング', rankings_like_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--        <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default' , data: {"turbolinks" => false} %></li>-->
+        <!--        <li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-lg btn-default' %></li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+        <!--<% else %>-->
+        <!--<div class="menu-left">-->
+        <!--    <ul>-->
+        <!--        <li><%= link_to '概要・使い方', explanation_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+        
+        <!--<div class="menu-right">-->
+        <!--    <ul>-->
+        <!--        <li><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--        <li><%= link_to 'ログイン', login_path, class: 'btn btn-lg btn-default' %></li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+        <!--<% end %>-->
 
         
 </div>

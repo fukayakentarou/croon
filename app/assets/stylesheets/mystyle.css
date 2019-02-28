@@ -132,6 +132,7 @@ footer  {
 }
 
 p.movie-title {
+  text-align: center;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -278,7 +279,7 @@ transform: scale(1.2);
 .mozi ul {
     text-align: center;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 37px;
     margin-bottom: 20px;
    
    
@@ -286,8 +287,15 @@ transform: scale(1.2);
 
 .mozi ul li {
      list-style: none;
-     background-color: green;
-     margin-right: 560px;
-     margin-left: 560px;
      border-radius: 5px;
+}
+
+.pagination>li {
+    display: inline;
+    margin-right: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
