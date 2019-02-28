@@ -1,301 +1,256 @@
-#header_top {
+/*---------------------------------------------pcヘッダー画像の中身------------------*/
+
+#header {
+    width: 100%;
     background-color: black;
-    height: 80px;
-    text-align: center;
-    width: 100vw;
+    /*display: none;*/
+}
+
+#header_top a {
+    color: red;
 }
 
 #header_title {
-    
-    display: inline-block;
-    font-size: 60px;
-    font-weight: bolder;
-    
-}
-
-#header_top a:hover{
-    color: #D3D3D3;
-}
-
-#header_copy {
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    
-}
-
-#header_nav {
-    height: 60px ;
-    margin: 0 auto;
+    text-align: center;
     width: 100%;
-}
-
-#header_nav ul {
-    height: 40px;
-    margin: 10px 0px 0px 0px;
-    padding-left: 0px;
-    
-    
-}
-
-ul li {
-    color: black;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
-    line-height: 40px;
-    margin-left: 5px;
-    /*padding-left: 3rem;*/
-    margin-right: 25px;
-    /*padding-right: 3rem;*/
+    text-align: left;
+    padding-left: 15px;
+}
+
+.pc_navbar ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end ;
+    margin-bottom: 0;
+    padding-right: 25px;
+}
+
+.pc_navbar ul li {
+    margin:10px 10px 0 10px;
+    font-size: 20px;
     
 }
 
-.menu-left {
-    float: left;
-    display: inline;
-}
-
-.menu-right {
-    float: right;
-    display: inline;
-}
-
-.menu-right ul li{
-    display: inline-block;
-}
-
-.menu-left ul li {
-    display: inline-block
-    
-}
-
-
-
-
-
-
-
-
-#header {
-    height: 155px;
-    min-width: 100vw;
-    background-color:black ;
-}
-
-
-.hoge img {
-    width: 100vw;
-    object-fit: cover;
-}
-
-.row {
-    
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-
-
-footer  {
-    background-color: black;
-    text-align: center;
-    font-size: 40px;
-    color: #1E90FF;
-    font-weight: bolder;
-    padding: 0;
+.container-fluid {
     margin: 0;
-    margin-right: -15px;
-    margin-left: -15px;
-    width: 100vw;
-    
+    padding: 0;
 }
 
 
-
-
-
-
-.search {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-.movie .panel-heading {
-  height: 250px;
-}
-
-.movie .panel-heading img {
-  height: 100%;
-  max-width: 100%;
-}
-
-p.movie-title {
-  text-align: center;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-
-.movie .panel-body {
-  height: 120px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
-}
-
-
-.movie .buttons form {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.media-body {
-    border-bottom: 2px solid gray;
-
-}
-
-.name{
-    color: blue;
-}
-
-.title{
-    color: blue;
-}
-
-.content{
-    color: black;
-}
-
-.user{
-    color: blue;
-}
-
-.name:hover {
-    color: red;
-}
-
-.title:hover {
-    color: red;
-}
-
-.play{
-    margin: auto;
-    padding: auto;
-    width: 650px;
-    font-size: 25px;
-    font-weight: bold;
-    
-}
-
-p.important {
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: #1E90FF;
+#main_visual {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .hoge {
-    width: 100vw;
-    margin: 0 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-position: 20% center;
+    background-image: url(/images/eigakan12.jpg);
+}
+
+.eigatitle {
+    color: white;
+    font-size: 35px;
+    padding: 60px 0 0 60px;
+    font-weight: bold;
 }
 
 
+/*--------------------------------------------------ここから利用方法*/
 
-body.sessions_new  {
-    padding: 0px;
-    background-image: url(/images/eigakan1.jpg);
-    background-size: 100vw 100vh;
+.setumei_pc {
+    background-color: black;
+    width: 100%;
 }
 
-body.users_new {
-    padding: 0px;
-    background-image: url(/images/eigakan1.jpg);
-    background-size: 100vw 100vh;
-}
-
-.animated {
-    opacity: 0;
-}
-
-
-.movie img:hover {
-  /* 1.1倍に拡大する */
-transform: scale(1.2);
-}
-
-#contact {
-    background-color: skyblue;
-    color: black;
-    height: 180px;
-    width: 100vw;
-    
-   
-}
-
-#contact ul {
-  margin-bottom: 0;
-  text-align: center
-  
-}
-
-
-
-#contact h2 {
-    font-size: 40px;
-    color: #1E90FF;
-    text-align: center
-    
-}
-
-#contact ul li {
-    margin: 0px auto;
-    list-style: none;
-    color: red;
-    display: inline-block;
-}
-
-.news {
-    margin-top: 30px;
-    text-align: center
-    
-}
-
-.news ul li i {
-  font-size: 5rem;
-  padding-right: 35px;
-  
-}
-
-.text-center {
-    padding: 10px;
-}
-
-.users_new .container-fluid,
-.sessions_new .container-fluid{
-    padding-top: 20px;
-}
-
-
-.mozi ul {
+#setumei_bun_pc {
     text-align: center;
     font-size: 25px;
-    margin-top: 37px;
-    margin-bottom: 20px;
-   
-   
+    color: white;
+    padding-top: 35px;
+    font-weight: bold;
 }
 
-.mozi ul li {
-     list-style: none;
-     border-radius: 5px;
+.setumeinaiyou_pc {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0 150px 0 150px;
 }
 
-.pagination>li {
+/*----------------------------------------------------------映画の広告*/
+
+.koukoku_pc {
+    width: 100%;
+    background-color: black;
+}
+
+.koukokuname_pc {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 35px;
+    font-weight: bold;
+    
+}
+
+.koukokuimage_pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.imagegazou_pc {
+    margin-top: 30px;
+    width: 19%;
+    background-color: black;
+    
+}
+
+.imagegazou_pc img {
+     max-width: 100%;
+     background-color: white;
+     padding: 2%;
+}
+
+.voice_pc {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-top: 35px;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------ここからフッター--------------*/
+
+footer {
+    width: 100%;
+    background-color: red;
+}
+
+footer_pc {
+    width: 100%;
+}
+
+
+.footer_copy {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------------------------------パソコン表示のトップページは完成---------*/
+
+/*--------------------------------------------------------------ここから新規登録-------------------------*/
+
+.text-center_pc {
+    width: 100%;
+}
+
+.sign_up_pc {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.up_pc {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.label_pc {
     display: inline;
-    margin-right: 0;
+    font-size: 17px;
+    
+    
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+.new_user {
+ width: 100%;
+}
+
+.form-group {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+   
+}
+
+.text-right {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+}
+
+
+/*------------------------------------------------------ここからログイン画面---------------------------------*/
+.login_pc {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.down_pc {
+    width: 100%;
+    
+}
+
+.ppp {
+    text-align: center;
+}
+
+/*------------------------------------------------------------ここからログイン後のユーザー詳細*/
+
+.container-fluid {
+    width: 100%;
+}
+
+.user_syousai_pc ul{
+    width: 100%;
+
+}
+
+.user_syousai_pc ul li {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 0 0 15px;
+}
+
+.movie {
+    width: 100%;
+    
+}
+
+.oyayouso_pc {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.panel-default {
+    width: 25%;
+    
+}
+
+.panel-heading img{
+    max-width: 100%;
 }
