@@ -8,11 +8,11 @@
                 <div class="oyayouso_pc">
                         <div class="panel panel-default">
                             <div class="panel-heading text-center">
-                                <img src="<%= 'https://image.tmdb.org/t/p/w500/' + movie.poster_path %>" alt="" >
+                                <img src="<%= 'https://image.tmdb.org/t/p/w500/' + movie.poster_path.to_s %>" alt="" >
                         　　</div>
-                        　　<div class="panel-body">
+                        　　<div class="panel-body_pc">
                                 <% if movie.persisted? %>
-                                    <p class="movie-title"><%= link_to movie.title, movie_path(movie) %></p>
+                                    <p class="movie-title_pc"><%= link_to movie.title, movie_path(movie) %></p>
                                 <% else %>
                                     <p class="movie-title"><%= movie.title %></p>
                                 <% end %>

@@ -4,19 +4,19 @@
       <div class="media-body">
         
         <div>
-          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <span class="text-muted">posted at <%= review.created_at %></span></p>
+          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <br><span class="text-muted">posted at <%= review.created_at %></span></p>
         </div>
         
         <% if controller_name == "reviews" && action_name == "index" %>
-        <div>
+        <div class="title_pc">
           <p>タイトル: <%= link_to review.movie.title, movie_path(review.movie),{ :class => "title"} %></p>
         </div>
         <div class="movie">
-          <div class="col-md-3 col-md-4 col-xs-12">
+          <!--<div class="col-md-3 col-md-4 col-xs-12">-->
              <div class="panel panel-default">
                     <div class="panel-heading text-center">
         <img src="<%= 'https://image.tmdb.org/t/p/w500/' + review.movie.poster_path %>" alt="" >
-        </div>
+        <!--</div>-->
         </div>
         </div>
         </div>

@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   def read(result)
     code = result['id']
     title = result['title']
-    poster_path = result['poster_path'].gsub('?_ex=128x128', '')
+    poster_path = result['poster_path']&.gsub('?_ex=128x128', '')
     release_date = result['release_date']
   
     {
