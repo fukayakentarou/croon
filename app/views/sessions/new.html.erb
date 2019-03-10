@@ -8,12 +8,13 @@
         <%= form_for(:session, url: login_path) do |f| %>
         
         <div class="form-group">
-            <%= f.label :email, 'メールアドレス' %>
+            <!--<%= f.label :email, 'メールアドレス' %>-->
+            <label class="email" for="email">メールアドレス</label>
             <%= f.email_field :email, class: 'form-control' %>
         </div>
         
         <div class="form-group">
-            <%= f.label :password, 'パスワード' %>
+            <label class="password" for="password">パスワード</label>
             <%= f.password_field :password, class: 'form-control' %>
         </div>
         

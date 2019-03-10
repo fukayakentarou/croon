@@ -4,7 +4,8 @@
       <div class="media-body">
         
         <div>
-          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <br><span class="text-muted">posted at <%= review.created_at %></span></p>
+          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <br><span class="text-muted">
+            <%= review.created_at.strftime("%Y年 %m月 %d日") %></span></p>
         </div>
         
         <% if controller_name == "reviews" && action_name == "index" %>

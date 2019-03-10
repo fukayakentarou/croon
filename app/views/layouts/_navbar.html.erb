@@ -7,20 +7,30 @@
         <% if logged_in? %>
             <div class="pc_navbar_log">
                 <ul>
-                    <li><%= link_to 'レビュー一覧', reviews_path %></li>
-                    <li><%= link_to 'movie検索', new_movie_path %></li>
-                    <li><%= link_to 'ランキング', rankings_like_path %></li>
-                    <li><%= link_to 'ユーザー詳細', user_path(current_user), data: {"turbolinks" => false} %></li>
-                    <li><%= link_to 'ログアウト', logout_path, method: :delete %></li>
+                    <li class="bothboth"><%= link_to 'レビュー一覧', reviews_path %></li>
+                    <li class="bothboth"><%= link_to 'movie検索', new_movie_path %></li>
+                    <li class="bothboth"><%= link_to 'ランキング', rankings_like_path %></li>
+                    <li class="bothboth"><%= link_to 'ユーザー詳細', user_path(current_user), data: {"turbolinks" => false} %></li>
+                    <li class="bothboth"><%= link_to 'ログアウト', logout_path, method: :delete %></li>
                 </ul>
             </div>
+            <div class="sp_navbar_log">
+          　　<!--<img id="sp_navi_btn" class="u-max-full-width" src="/images/sp_navi.png" alt="アイコン" srcset="/images/sp_navi@2x.png 2x" />-->
+          　　<span class="sp glyphicon glyphicon-th-list"></span>
+                <ul>
+                    <li class="bothboth"><%= link_to 'レビュー一覧', reviews_path %></li>
+                    <li class="bothboth"><%= link_to 'movie検索', new_movie_path %></li>
+                    <li class="bothboth"><%= link_to 'ランキング', rankings_like_path %></li>
+                    <li class="bothboth"><%= link_to 'ユーザー詳細', user_path(current_user), data: {"turbolinks" => false} %></li>
+                    <li class="bothboth"><%= link_to 'ログアウト', logout_path, method: :delete %></li>
+                </ul>
+        　　</div>
         <% else %>
         
             <div class="pc_navbar">
                 <ul>
-                    <!--<li><%= link_to '利用方法', explanation_path %></li>-->
-                    <li><%= link_to '新規登録', signup_path %></li>
-                    <li><%= link_to 'ログイン', login_path %></li>
+                    <li class="both"><%= link_to '新規登録', signup_path %></li>
+                    <li class="both"><%= link_to 'ログイン', login_path %></li>
                 </ul>
             </div>
         <% end %>

@@ -10,6 +10,14 @@
     color: red;
 }
 
+#header_top .pc_navbar ul li.both a {
+    color: white;
+}
+
+#header_top .pc_navbar_log ul li.bothboth a{
+    color: white;
+}
+
 #header_title {
     text-align: center;
     width: 100%;
@@ -70,7 +78,7 @@
     background-image: url(/images/eigakan12.jpg);
 }
 
-.eigatitle {
+.eigatitle_pc {
     color: white;
     font-size: 37px;
     padding: 80px 0 0 80px;
@@ -87,6 +95,21 @@
     font-size: 23px;
     font-weight: bold;
 }
+
+body.users_new {
+    background-color: #090909;
+   
+}
+
+body.sessions_new {
+    background-color: #090909;
+   
+}
+
+/*body.explanations_index {*/
+/*    background-color: black;*/
+   
+/*}*/
 
 /*--------------------------------------------------ここから利用方法*/
 
@@ -107,7 +130,7 @@
     color: white;
     padding-top: 40px;
     padding-bottom: 60px;
-    margin: 0 150px 0 150px;
+    margin: 0 170px 0 170px;
 }
 
 .pc_navbar_log ul {
@@ -126,6 +149,30 @@
 
 }
 
+
+.middle {
+    width: 100%;
+}
+
+.middle_pc {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.abc {
+    width: 100%;
+}
+
+.aaa_pc {
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.aaa_sp {
+    display: none;
+}
 /*----------------------------------------------------------映画の広告*/
 
 .koukoku_pc {
@@ -146,6 +193,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /*padding-bottom: 20px;*/
     
 }
 
@@ -179,7 +227,7 @@
 
 .reviewname_pc {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: black;
     padding-top: 35px;
     font-weight: bold;
@@ -238,7 +286,7 @@
 
 .skill-box_pc {
     width: 32%;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .skill_gazou img {
@@ -290,7 +338,7 @@ footer_pc {
 .footer_copy {
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: red;
     font-weight: bold;
 }
 
@@ -308,7 +356,7 @@ footer_pc {
 }
 
 .contact_pc ul li a{
-   color: red;
+   color: white;
 }
 /*------------------------------------------------------------------------------------------------パソコン表示のトップページは完成---------*/
 
@@ -324,7 +372,7 @@ footer_pc {
     font-weight: bold;
     padding-top: 40px;
     padding-bottom: 20px;
-    
+    color: white;
 }
 
 .up_pc {
@@ -355,6 +403,7 @@ footer_pc {
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 
@@ -365,7 +414,24 @@ footer_pc {
     font-weight: bold;
     padding-top: 40px;
     padding-bottom: 20px;
-    
+    color: white;
+}
+
+.label_pc {
+    color: white;
+}
+
+label[for] {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.email {
+    color: white;
+}
+
+.password {
+    color: white;
 }
 
 .down_pc {
@@ -431,6 +497,7 @@ footer_pc {
 .panel-default {
     margin-right: 1%;
     margin-left: 1%;
+    /*height: 400px;*/
 }
 
 .movie-title_pc a{
@@ -448,11 +515,14 @@ footer_pc {
     
 }
 .media {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
 }
 
 .media-body {
     padding-top: 20px;
+    border: solid 1px black;
 }
 
 .title_pc {
@@ -498,4 +568,211 @@ p {
 .movie img:hover {
    /*1.1倍に拡大する */
 transform: scale(1.1);
+}
+
+
+
+.toptop li {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.asidede {
+    width: 100%;
+}
+
+.tokou {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+/*-----------------------------------------------------------------------ここからspの非表示の項目-----------------------------------------------------------------------*/
+.eigatitle_sp {
+    display: none;
+}
+
+.sp_navbar_log {
+    display: none;
+}
+
+.u-max-full-width_pc_one {
+    display: none;
+}
+
+
+/*---------------------------------------------------------------------ここからsp表示------------------------------------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+#header_title {
+    font-size: 40px;
+}
+
+.pc_navbar ul li {
+    margin: 10px 0px 0 10px;
+    font-size: 15px;
+}
+
+.eigatitle_pc {
+    display: none;
+}
+
+.eigatitle_sp {
+    display:block;
+    color: white;
+    padding: 100px 0 0 30px;
+    font-size: 23px;
+    
+}
+
+.setumeinaiyou_pc {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0 20px 0 20px;
+   
+}
+
+#setumei_bun_pc {
+    
+    font-size: 18px;
+    padding-top: 20px;
+    
+}
+
+.reviewname_pc {
+    
+    font-size: 22px;
+    padding-top: 20px;
+   
+}
+
+.eiga_title_pc p {
+    
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.news_pc li {
+   
+    font-size: 15px;
+}
+
+.koukokuname_pc {
+    font-size: 22px;
+    padding-top: 20px;
+    
+}
+
+.enjoy_pc p {
+   
+    font-size: 22px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.reviewgazou_pc {
+    margin-top: 10px;
+    width: 33%;
+    border-bottom: 5px solid #fff;
+}
+
+.imagegazou_pc {
+    margin-top: 10px;
+    width: 33%;
+    /* background-color: black; */
+}
+
+.imagegazou_pc img {
+    margin-bottom: 5px;
+}
+
+.container_pc p {
+    font-size: 10px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.contact_pc ul li {
+    font-size: 15px;
+    text-align: right;
+}
+
+.footer_copy {
+   
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.pc_navbar_log{
+    display: none;
+}
+
+.sp_navbar_log {
+    display: block;
+}
+
+.glyphicon{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top:30px;
+  right:10%;
+
+  z-index: 100; 
+}
+
+.sp_navbar_log ul li {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    border-bottom: solid white thin;
+}
+
+
+
+
+
+.media {
+    width: 49%;
+}
+
+.row > .movie {
+    width: 50%;
+}
+
+.hoge {
+    height: 420px;
+}
+
+.u-max-full-width_pc_one {
+    display: block;
+}
+
+.u-max-full-width_pc_two {
+    display: none;
+}
+
+
+#header_top .sp_navbar_log ul li.bothboth a{
+    color: white;
+}
+
+/*#header_top .sp_navbar_log ul li.bothboth a:hover{*/
+/*    color: yellow;*/
+/*}*/
+
+.aaa_pc{
+    display: none;
+}
+
+.aaa_sp {
+    display: block;
+    padding-top: 25px;
+    padding-left: 30px;
+}
 }

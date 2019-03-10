@@ -40,17 +40,25 @@
   <!--          </div>-->
   <!--      <% end %>-->
   <!--  </div>-->
-  <div class="eigatitle">映画レビュー共有サイト<br>世界中の人と映画の価値観を共有し合う</div>
+  <div class="eigatitle_pc">映画レビュー共有サイト<br>世界中の人と映画の価値観を共有し合う</div>
+   <div class="eigatitle_sp">映画レビュー共有サイト<br>世界中の人と映画の価値観<br>を共有し合う</div>
+  
+  <div class="abc">
+   <ul>
+     <li class="aaa_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+     <li class="aaa_sp"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+   </ul>
+ </div>
+  
   </section>
 </div>
 <div class="setumei_pc">
   <div id="setumei_bun_pc">利用方法</div>
-  <p class="setumeinaiyou_pc">ここではこのアプリの使い方・サイト概要について紹介していきます。まず、アプリのタイトルでもある「Lefilm」とはフランス語で映画という意味になります。
-    そして、このアプリの最大の目的は、キャッチフレーズでもある「価値観を共有したいあなたへ」とあるように、映画の検索はもちろん、他のユーザーがお気に入りした映画、
-    映画に対して投稿したレビューなどが共有できるようなっており、レビューを見て映画を見た。こんな面白い映画があったんだ。
-    のように一人でも多くの人が映画に対して興味を持って頂ければいいなという思いを込めて作りました。また、ランキング表示などもしており、旬の映画や、お気に入りが多い映画なども共有できるようなっており、映画好きの方にとってはとっておきのアプリとなっていると思います。
-    価値観を共有し、新たな映画に出会って頂きたいです。それではまず、ユーザー登録の方を行ないログインしていただければと思います。
-    サイトに関して不明点ございましたら下記️よりお問い合わせください</p>
+  <p class="setumeinaiyou_pc">ここではこのアプリの使い方について紹介していきます。キャッチフレージにもありますようこのアプリは映画レビュー共有サイトになります。
+  また世界中の人と映画の価値観を共有し、あなたが今まで知らなかった映画を知ることができたり、さらに新たなジャンルの映画に出会える。そんな想いが込もったアプリになります。
+  新規登録をして頂きますと、ログイン画面がでてきますのでログインしてください。
+  是非、新規登録の方をして頂き、中身をのぞいてみてください。
+  </p>
 </div>
 <div class="review_pc">
   <div class="reviewname_pc">あなたにオススメの映画</div>
@@ -62,20 +70,24 @@
   <div class="reviewimage_pc">
     
   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc" src="images/eiga25.jpg" alt="アイテム">
   </div>
    <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc" src="images/eiga26.jpg" alt="アイテム">
   </div>
    <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc" src="images/eiga27.jpg" alt="アイテム">
   </div>
   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc" src="images/eiga28.jpg" alt="アイテム">
   </div>
    <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc" src="images/eiga29.jpg" alt="アイテム">
   </div>
+  <div class="reviewgazou_pc">
+    <img class="u-max-full-width_pc_one" src="images/eiga32.jpg" alt="アイテム">
+  </div>
+  
   
  </div>
  
@@ -104,6 +116,9 @@
   </div>
    <div class="reviewgazou_pc">
     <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">
+  </div>
+  <div class="reviewgazou_pc">
+    <img class="u-max-full-width_pc_one" src="images/eiga30.jpg" alt="アイテム">
   </div>
   
  </div>
@@ -206,7 +221,7 @@
  
 <!--</div>-->
 <div class="koukoku_pc">
-  <div class="koukokuname_pc">レビューが多い映画TOP10</div>
+  <div class="koukokuname_pc">2018年興行収入TOP10</div>
   
   <div class="koukokuimage_pc">
   <div class="imagegazou_pc">
@@ -237,11 +252,16 @@
     <img class="u-max-full-width_pc" src="images/eiga9.jpg" alt="アイテム">
   </div>
    <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga10.jpg" alt="アイテム">
+    <img class="u-max-full-width_pc_two" src="images/eiga10.jpg" alt="アイテム">
   </div>
  </div>
  
- <!--<div class="voice_pc">新たな映画に出会ってみませんか？</div>-->
+ <div class="middle">
+   <ul>
+     <li class="middle_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+   </ul>
+ </div>
+ 
 </div>
 
 <!--<div class="review_pc">-->
@@ -289,9 +309,9 @@
    <div class="container_pc">
           <div class="skill-box_pc">
             <div class="skill_gazou">
-            <img class="u-max_pc" src="images/gazou36.png" alt="アイテム">
+            <img class="u-max_pc" src="images/gazou35.png" alt="アイテム">
             </div>
-            <p>レンタルショップでハズレを引く確率が下がり、あなた好みの映画に出会える</p>
+            <p class="shop">レンタルショップでハズレを引く確率が下がり、あなた好みの映画に出会える</p>
           </div>
           
           <div class="skill-box_pc">

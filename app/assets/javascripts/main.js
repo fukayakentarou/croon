@@ -10,3 +10,12 @@ $(document).ready(function() {
 });
 
 
+ $(function(){
+    $(document).ready(function(){
+
+      $(".sp.glyphicon.glyphicon-th-list").click(function () {
+        $(this).next().slideToggle();
+      });
+
+    });
+  });
