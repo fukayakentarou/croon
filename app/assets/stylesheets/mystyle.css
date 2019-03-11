@@ -24,7 +24,7 @@
     font-size: 50px;
     font-weight: bold;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .pc_navbar ul {
@@ -163,7 +163,7 @@ body.sessions_new {
 .middle_pc {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 0;
+    padding-top: 20px;
     margin-top: 0;
 }
 
@@ -232,13 +232,13 @@ body.sessions_new {
 
 .review_pc {
     width: 100%;
-    background-color: black;
+    background-color: #F6F6F6;
 }
 
 .reviewname_pc {
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: black;
     padding-top: 35px;
     font-weight: bold;
     
@@ -256,7 +256,7 @@ body.sessions_new {
     margin-top: 15px;
     width: 19%;
     /*background-color: black;*/
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     
 }
 
@@ -276,14 +276,14 @@ body.sessions_new {
 
 .enjoy_pc {
     width: 100%;
-    background-color: black;
+    background-color: #F6F6F6;
     
 }
 
 .enjoy_pc p {
     text-align: center;
     font-size: 25px;
-    color: white;
+    color: black;
     padding-top: 35px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -298,6 +298,7 @@ body.sessions_new {
 .skill-box_pc {
     width: 32%;
     /*background-color: red;*/
+        margin-bottom: 70px;
 }
 
 .skill_gazou img {
@@ -318,29 +319,34 @@ body.sessions_new {
 .eiga_title_pc p{
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: black;
     margin: 0;
     padding-top: 20px;
 }
 
 .news_pc ul{
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
+    margin-bottom: 0;
 }
 
 .news_pc li {
     text-align: center;
     font-size: 20px;
-    background-color: black;
+    background-color: #F6F6F6;
 }
 
+.middle ul {
+    margin-bottom: 0;
+}
 
 /*----------------------------------------------------ここからフッター--------------*/
 
 footer {
     width: 100%;
     background-color: black;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 }
 
 footer_pc {
@@ -553,6 +559,8 @@ p {
     font-size: 15px;
     
 }
+
+
 /*--------------------------------------------------------------映画検索画面-------------------------*/
 
 .row_two {
@@ -587,7 +595,9 @@ transform: scale(1.1);
 .toptop li {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
 }
 
 .asidede {
@@ -636,6 +646,7 @@ transform: scale(1.1);
     color: white;
     padding: 100px 0 0 30px;
     font-size: 23px;
+    font-weight: bold;
     
 }
 
@@ -661,13 +672,13 @@ transform: scale(1.1);
 }
 
 .eiga_title_pc p {
-    
+    padding-top: 45px;
     font-size: 15px;
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .news_pc li {
-   
+    padding-top: 30px;
     font-size: 15px;
 }
 
@@ -686,6 +697,7 @@ transform: scale(1.1);
 
 .reviewgazou_pc {
     margin-top: 10px;
+    margin-bottom: 5px;
     width: 33%;
     border-bottom: 5px solid #fff;
 }
