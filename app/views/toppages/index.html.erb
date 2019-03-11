@@ -128,7 +128,7 @@
 
 <div class="news_pc">
   <ul>
-    <li><%= link_to 'もっと見る', explanation_path%></li>
+    <li><%= link_to 'もっと見る', explanation_path,class: 'btn btn-lg btn-danger'%></li>
   </ul>
 </div>
 <!--<div class="review_pc">-->
@@ -332,12 +332,17 @@
 </div>
 <% end %>
 
+
 <footer>
   <div class="contact_pc">
     <ul>
+        <% if logged_in? %>
+        <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
+        <% else %>
         <li><%= link_to '新規登録', signup_path %></li>
         <li><%= link_to 'ログイン', login_path %></li>
         <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
+        <% end %>
     </ul>
   </div>
     <div class="footer_pc">

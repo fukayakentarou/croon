@@ -106,6 +106,11 @@ body.sessions_new {
    
 }
 
+.alert-success {
+   
+    margin-bottom: 0;
+}
+
 /*body.explanations_index {*/
 /*    background-color: black;*/
    
@@ -116,6 +121,7 @@ body.sessions_new {
 .setumei_pc {
     background-color: black;
     width: 100%;
+    border-bottom: 1px solid #666;
 }
 
 #setumei_bun_pc {
@@ -173,6 +179,10 @@ body.sessions_new {
 .aaa_sp {
     display: none;
 }
+
+.pagination {
+    margin-left: 5px;
+}
 /*----------------------------------------------------------映画の広告*/
 
 .koukoku_pc {
@@ -222,13 +232,13 @@ body.sessions_new {
 
 .review_pc {
     width: 100%;
-    background-color: white;
+    background-color: black;
 }
 
 .reviewname_pc {
     text-align: center;
     font-size: 30px;
-    color: black;
+    color: white;
     padding-top: 35px;
     font-weight: bold;
     
@@ -246,7 +256,7 @@ body.sessions_new {
     margin-top: 15px;
     width: 19%;
     /*background-color: black;*/
-    border-bottom: 40px solid #fff;
+    margin-bottom: 40px;
     
 }
 
@@ -266,13 +276,14 @@ body.sessions_new {
 
 .enjoy_pc {
     width: 100%;
+    background-color: black;
     
 }
 
 .enjoy_pc p {
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: white;
     padding-top: 35px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -307,6 +318,7 @@ body.sessions_new {
 .eiga_title_pc p{
     text-align: center;
     font-size: 20px;
+    color: white;
     margin: 0;
     padding-top: 20px;
 }
@@ -319,6 +331,7 @@ body.sessions_new {
 .news_pc li {
     text-align: center;
     font-size: 20px;
+    background-color: black;
 }
 
 
@@ -773,5 +786,15 @@ footer {
     display: block;
     padding-top: 25px;
     padding-left: 30px;
+}
+
+.form-group_pc {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    margin: 0 30px 0 30px;
+}
+
+.input-lg {
+    height: 36px;
 }
 }
