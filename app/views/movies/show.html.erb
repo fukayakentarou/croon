@@ -1,5 +1,5 @@
 <div class="row">
- 
+  <div class="col-md-3 col-sm-4 col-xs-6 col-md-offset-3 col-sm-offset-2">
     <div class="movie">
       <div class="panel panel-default">
         <div class="panel-heading text-center">
@@ -13,8 +13,9 @@
         </div>
       </div>
     </div>
+  </div>
   
-  
+  <div class="col-md-3 col-sm-4 col-xs-6">
     <div class="like-users">
       <div class="panel panel-default">
         <div class="panel-heading text-center">
@@ -28,9 +29,7 @@
       </div>
     </div>
   
-  
-    
-    <aside class="asidede">
+    <!--<aside class="asidede">-->
       <%= form_for(@review) do |f| %>
       
       <div class="form-group">
@@ -45,8 +44,8 @@
       <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
       </div>
       <% end %>
-      
-    </aside>
+  </div> 
+    
 
     
     

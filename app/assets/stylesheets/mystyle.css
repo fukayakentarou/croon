@@ -183,6 +183,9 @@ body.sessions_new {
 .pagination {
     margin-left: 5px;
 }
+
+
+
 /*----------------------------------------------------------映画の広告*/
 
 .koukoku_pc {
@@ -341,6 +344,7 @@ body.sessions_new {
     margin-bottom: 0;
 }
 
+
 /*----------------------------------------------------ここからフッター--------------*/
 
 footer {
@@ -365,7 +369,7 @@ footer_pc {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 20px;
 }
 
@@ -411,10 +415,11 @@ footer_pc {
  width: 100%;
 }
 
-.form-group {
+.form-group_six {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 1%;
    
 }
 
@@ -600,15 +605,15 @@ transform: scale(1.1);
     background-color: #F6F6F6;
 }
 
-.asidede {
-    width: 100%;
-}
+/*.asidede {*/
+/*    width: 100%;*/
+/*}*/
 
-.tokou {
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-bottom: 5%;
-}
+/*.tokou {*/
+/*    margin-right: 25%;*/
+/*    margin-left: 25%;*/
+/*    margin-bottom: 5%;*/
+/*}*/
 
 /*-----------------------------------------------------------------------ここからspの非表示の項目-----------------------------------------------------------------------*/
 .eigatitle_sp {
