@@ -195,7 +195,7 @@ body.sessions_new {
 
 .koukokuname_pc {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     padding-top: 35px;
     font-weight: bold;
@@ -345,6 +345,9 @@ body.sessions_new {
 }
 
 
+.toptop ul {
+    margin-bottom: 0px;
+}
 /*----------------------------------------------------ここからフッター--------------*/
 
 footer {
@@ -734,7 +737,7 @@ transform: scale(1.1);
 }
 
 footer {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .pc_navbar_log{
@@ -814,4 +817,13 @@ footer {
 .input-lg {
     height: 36px;
 }
+
+.skill-box_pc {
+ margin-bottom: 20px;
+}
+
+.toptop ul {
+    margin-bottom: 0px;
+}
+
 }
