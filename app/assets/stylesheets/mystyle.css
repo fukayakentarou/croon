@@ -521,11 +521,11 @@ label[for] {
     width: 25%;
 }
 
-.panel-default {
-    margin-right: 1%;
-    margin-left: 1%;
+/*.panel-default {*/
+/*    margin-right: 1%;*/
+/*    margin-left: 1%;*/
     /*height: 400px;*/
-}
+/*}*/
 
 .movie-title_pc a{
     display: block;
@@ -593,10 +593,10 @@ p {
 }
 
 
-.movie img:hover {
+/*.movie img:hover {*/
    /*1.1倍に拡大する */
-transform: scale(1.1);
-}
+/*transform: scale(1.1);*/
+/*}*/
 
 
 
@@ -826,6 +826,10 @@ footer {
 
 .toptop ul {
     margin-bottom: 0px;
+}
+
+.col-xs-6{
+    width: 49%;
 }
 
 }
