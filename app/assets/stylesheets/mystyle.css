@@ -518,12 +518,12 @@ label[for] {
 
 
 .row > .movie {
-    width: 24%;
+    width: 25%;
 }
 
 .panel-default {
-    margin-right: 0.5%;
-    margin-left: 0.5%;
+    margin-right: 1%;
+    margin-left: 1%;
     /*height: 400px;*/
 }
 
@@ -761,7 +761,9 @@ footer {
 .sp_navbar_log ul li {
     text-align: center;
     margin: auto;
-    font-size: 15px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 18px;
     border-bottom: solid white thin;
 }
 

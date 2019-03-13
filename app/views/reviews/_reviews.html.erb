@@ -28,12 +28,12 @@
           <p><input type="hidden" name="movie_id" value="movie.id"></p>
         </div>
         <div>
-          <p>レビュー: <span class="content"><%= review.content %></span></p>
+          <p>🗣 <span class="content"><%= review.content %></span></p>
         </div>
         <div>
           <% if current_user == review.user %> 
-          <%= link_to "レビューを削除する", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
-          <%= link_to "レビューを編集する", edit_review_path(review), class: "btn btn-danger btn-xs" %>
+          <%= link_to "レビュー削除", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
+          <%= link_to "レビュー編集", edit_review_path(review), class: "btn btn-danger btn-xs" %>
         　<% end %>
         </div>
       </div>
