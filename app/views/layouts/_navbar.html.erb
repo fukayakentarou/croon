@@ -15,8 +15,8 @@
                 </ul>
             </div>
             <div class="sp_navbar_log">
-          　　<!--<img id="sp_navi_btn" class="u-max-full-width" src="/images/sp_navi.png" alt="アイコン" srcset="/images/sp_navi@2x.png 2x" />-->
-          　　<span class="sp glyphicon glyphicon-th-list"></span>
+             <!--<img id="sp_navi_btn" class="u-max-full-width" src="/images/sp_navi.png" alt="アイコン" srcset="/images/sp_navi@2x.png 2x" />-->
+             <span class="sp glyphicon glyphicon-th-list"></span>
                 <ul>
                     <li class="bothboth"><%= link_to 'レビュー一覧', reviews_path %></li>
                     <li class="bothboth"><%= link_to 'movie検索', new_movie_path %></li>
@@ -24,7 +24,7 @@
                     <li class="bothboth"><%= link_to 'ユーザー詳細', user_path(current_user), data: {"turbolinks" => false} %></li>
                     <li class="bothboth"><%= link_to 'ログアウト', logout_path, method: :delete %></li>
                 </ul>
-        　　</div>
+            </div>
         <% else %>
         
             <div class="pc_navbar">

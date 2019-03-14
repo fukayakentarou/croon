@@ -519,8 +519,8 @@ label[for] {
 
 .row > .movie {
     width: 24%;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
+    margin-right: 0.25%;
+    margin-left: 0.25%;
 }
 
 /*.panel-default {*/
@@ -544,8 +544,8 @@ label[for] {
 }
 .media {
     width: 24%;
-    margin-right: 0.25%;
-    margin-left: 0.25%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
 }
 
 .media-body {
