@@ -519,8 +519,8 @@ label[for] {
 
 .row > .movie {
     width: 24%;
-    margin-right: 0.25%;
-    margin-left: 0.25%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
 }
 
 /*.panel-default {*/
@@ -775,10 +775,13 @@ footer {
 
 .media {
     width: 49%;
+    margin-right: 0.25%;
+    margin-left: 0.25%;
 }
 
 .row > .movie {
     width: 49%;
+   
 }
 
 .hoge {
