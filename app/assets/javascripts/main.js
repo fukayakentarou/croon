@@ -5,8 +5,8 @@ $(document).ready(function() {
         //  $(this.element).removeClass("fadeOutUp");
         $(this.element).addClass("fadeInUp");
         this.destroy();
-      }
-      }, { offset: "65%" });
+    }
+  }, { offset: "65%" });
 });
 
 
