@@ -748,6 +748,7 @@ footer {
 
 .sp_navbar_log {
     display: block;
+    padding-top: 10px;
 }
 
 .glyphicon{
