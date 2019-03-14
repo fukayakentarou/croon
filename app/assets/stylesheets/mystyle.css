@@ -775,13 +775,12 @@ footer {
 
 .media {
     width: 49%;
-    margin-right: 0.25%;
-    margin-left: 0.25%;
 }
 
 .row > .movie {
     width: 49%;
-   
+    margin-right: 0.25%;
+    margin-left: 0.25%;
 }
 
 .hoge {
