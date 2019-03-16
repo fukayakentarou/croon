@@ -7,7 +7,7 @@ class ReviewsController < ApplicationController
   end
   
   def edit
-     @review = Review.find_by(id: params[:id])
+    @review = Review.find_by(id: params[:id])
   end
   
   def update
@@ -46,15 +46,15 @@ class ReviewsController < ApplicationController
   
   private
   
-  def correct_user
-    @movie = current_user.reviews.find_by(id: params[:id])
-    unless @movie
-      redirect_to root_url
+    def correct_user
+      @movie = current_user.reviews.find_by(id: params[:id])
+      unless @movie
+        redirect_to root_url
+      end
     end
-  end
-  
-  
-  def review_params
-    params.require(:review).permit(:content,:movie_id)
-  end
+    
+    
+    def review_params
+      params.require(:review).permit(:content,:movie_id)
+    end
 end

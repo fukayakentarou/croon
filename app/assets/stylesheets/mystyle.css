@@ -91,7 +91,7 @@
 
 .mozi ul li {
     text-align: center;
-    padding:15px 0 15px 0;
+    padding:5px 0 5px 0;
     font-size: 23px;
     font-weight: bold;
 }
@@ -384,6 +384,13 @@ footer_pc {
 .contact_pc ul li a{
    color: white;
 }
+
+.mozi ul {
+    width: 250px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 8px auto;
+}
 /*------------------------------------------------------------------------------------------------パソコン表示のトップページは完成---------*/
 
 /*--------------------------------------------------------------ここから新規登録-------------------------*/
@@ -633,6 +640,10 @@ p {
     display: none;
 }
 
+.mozi_sp {
+    display: none;
+}
+
 
 /*---------------------------------------------------------------------ここからsp表示------------------------------------------------------------------------------------------*/
 
@@ -837,4 +848,25 @@ footer {
     width: 49%;
 }
 
+.mozi {
+    display: none;
+}
+
+.mozi_sp {
+    display: block;
+    margin: auto;
+}
+
+.mozi_sp ul {
+    
+    background-color: red;
+    border-radius: 3px;
+}
+
+.mozi_sp ul li {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
 }

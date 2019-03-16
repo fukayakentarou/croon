@@ -19,9 +19,6 @@ class LikesController < ApplicationController
   end
     
 
-    
-    
-
   def destroy
     @movie = Movie.find(params[:movie_id])
     
