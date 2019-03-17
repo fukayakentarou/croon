@@ -3,7 +3,6 @@ class Movie < ApplicationRecord
     validates :title, presence: true, length: { maximum: 50 }
     validates :release_date, presence: true, length: { maximum: 100 }
     
- 
     has_many :likes
     has_many :users, through: :likes
     has_many :reviews

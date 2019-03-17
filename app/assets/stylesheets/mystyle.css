@@ -156,6 +156,12 @@ body.sessions_new {
 }
 
 
+
+.new_user a {
+    color: white
+}
+
+
 .middle {
     width: 100%;
 }
@@ -868,5 +874,9 @@ footer {
     padding: 5px 5px 5px 5px;
     font-size: 18px;
     font-weight: bold;
+}
+
+h1 {
+    font-size: 30px;
 }
 }
