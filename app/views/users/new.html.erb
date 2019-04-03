@@ -1,56 +1,36 @@
 
 <div class="text-center_pc">
-    <div class="sign_up_pc">新規登録</div>
+  <div class="sign_up_pc">新規登録</div>
 </div>
 
 <div class="up_pc">
-   
-        <%= form_for(@user) do |f| %>
-        <%= render 'layouts/error_messages', model: f.object %>
-        
-        <!--<div class="form-inline">-->
-        <div class="form-group_six">
-            <label for="user_name" class="label_pc">名前</label>
-            <!--<%= f.label :name, '名前' %>-->
-               
-                <%= f.text_field :name, class: 'form-control' %>
-                
-        </div>
-        
-        
-        <div class="form-group_six">
-            <label for="user_email" class="label_pc">メールアドレス</label>
-            <!--<%= f.label :email, 'メールアドレス' %>-->
-               
-                <%= f.email_field :email, class: 'form-control' %>
-                
-        </div>
-        
-        
-        <div class="form-group_six">
-            <label for="user_password" class="label_pc">パスワード</label>
-            <!--<%= f.label :password, 'パスワード' %>-->
-              
-                <%= f.password_field :password, class: 'form-control' %>
-                
-        </div>
-        
-        <div class="form-group_six">
-            <label for="user_password_confirmation" class="label_pc">パスワード（確認）</label>
-            <!--<%= f.label :password_confirmation, 'パスワード（確認）' %>-->
-                
-                <%= f.password_field :password_confirmation, class: 'form-control' %>
-                
-        </div>
-        
-        <div class="text-right">
-        <%= f.submit '登録する', class: "btn btn-danger btn-block" %>
-        </div>
-        
-        
-        <% end %>
-        <!--</div>-->
-        
-        
+  <%= form_for(@user) do |f| %>
+  <%= render 'layouts/error_messages', model: f.object %>
+  
+    <div class="form-group_six">
+      <label for="user_name" class="label_pc">名前</label>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
     
+    <div class="form-group_six">
+      <label for="user_email" class="label_pc">メールアドレス</label>
+      <%= f.email_field :email, class: 'form-control' %>
+    </div>
+        
+    <div class="form-group_six">
+      <label for="user_password" class="label_pc">パスワード</label>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+        
+    <div class="form-group_six">
+      <label for="user_password_confirmation" class="label_pc">パスワード（確認）</label>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
+        
+    <div class="text-right">
+    <%= f.submit '登録する', class: "btn btn-danger btn-block" %>
+    </div>
+    
+        
+  <% end %>
 </div>

@@ -2,26 +2,23 @@
   <% reviews.each do |review| %>
     <li class="media">
       <div class="media-body">
-        
         <div>
-          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <br><span class="text-muted">
-            <%= review.created_at.strftime("%Y年 %m月 %d日") %></span></p>
+          <p>名前: <%= link_to review.user.name, user_path(review.user),{ :class => "name"}  %> <br>
+          <span class="text-muted">
+          <%= review.created_at.strftime("%Y年 %m月 %d日") %></span></p>
         </div>
         
         <% if controller_name == "reviews" && action_name == "index" %>
-        <div class="title_pc">
-          <p>タイトル: <%= link_to review.movie.title, movie_path(review.movie),{ :class => "title"} %></p>
-        </div>
-        <div class="movie">
-          <!--<div class="col-md-3 col-md-4 col-xs-12">-->
-             <div class="panel panel-default">
-                    <div class="panel-heading text-center">
-        <img src="<%= 'https://image.tmdb.org/t/p/w500/' + review.movie.poster_path %>" alt="" >
-        <!--</div>-->
-        </div>
-        </div>
-        </div>
-        
+          <div class="title_pc">
+            <p>タイトル: <%= link_to review.movie.title, movie_path(review.movie),{ :class => "title"} %></p>
+          </div>
+          <div class="movie">
+            <div class="panel panel-default">
+              <div class="panel-heading text-center">
+                  <img src="<%= 'https://image.tmdb.org/t/p/w500/' + review.movie.poster_path %>" alt="" >
+              </div>
+            </div>
+          </div>
         <% end %>
         
         <div>
@@ -32,13 +29,13 @@
         </div>
         <div>
           <% if current_user == review.user %> 
-          <%= link_to "レビュー削除", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
-          <%= link_to "レビュー編集", edit_review_path(review), class: "btn btn-danger btn-xs" %>
+            <%= link_to "レビュー削除", review_path(review), method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
+            <%= link_to "レビュー編集", edit_review_path(review), class: "btn btn-danger btn-xs" %>
         　<% end %>
         </div>
-      </div>
+  　　　</div>
     </li>
   <% end %>
-  <!--<%= paginate  reviews %>-->
 </ul>
+
 <%= paginate  reviews %>

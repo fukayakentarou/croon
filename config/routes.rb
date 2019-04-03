@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
   root to: 'toppages#index'
   
   get 'explanation', to: 'explanations#index'
@@ -15,8 +13,6 @@ Rails.application.routes.draw do
   resources :movies, only: [:new, :show]
   resources :likes, only: [:create, :destroy]
   resources :reviews, only: [:index, :edit, :update, :create, :destroy]
-  
-  
   
   get 'rankings/like', to: 'rankings#like'
 end

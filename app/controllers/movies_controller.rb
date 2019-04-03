@@ -15,18 +15,18 @@ class MoviesController < ApplicationController
     @movies = Kaminari.paginate_array(@movies).page(params[:page]).per(20)
     @keyword = params[:keyword]
     if @keyword.present?
-    if params[:keyword]
-      @search = Tmdb::Search.new
-      @search.resource('movie')
-      @search.query(@keyword)
-      @search.fetch
-      results = @search.fetch.first(20)
-      
-      results.each do |result|
-        movie = Movie.find_or_initialize_by(read(result))
-        @movies << movie
+      if params[:keyword]
+        @search = Tmdb::Search.new
+        @search.resource('movie')
+        @search.query(@keyword)
+        @search.fetch
+        results = @search.fetch.first(20)
+        
+        results.each do |result|
+          movie = Movie.find_or_initialize_by(read(result))
+          @movies << movie
+        end
       end
-    end
     end
   end
 end

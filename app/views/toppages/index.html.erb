@@ -1,362 +1,195 @@
 <% if logged_in? %>
-<div class="row">
-  <div class="mozi">
-  <ul>
-    <li>お気に入りされた映画</li>
-  </ul>
-  </div>
-  <div class="mozi_sp">
-  <ul>
-    <li>お気に入りされた映画</li>
-  </ul>
-  </div>
-  <%= render "movies/movies", movies: @movies %>
-</div>
 
-
-
-  
-<% else %>
-<div id="main_visual">
-  <section class="hoge">
-  <!--<div id="header_top">-->
-  <!--  <a href="/" data-turbolinks="false"><div id="header_title">Le film</a></div>-->
-   
-    
-
-  <!--      <% if logged_in? %>-->
-  <!--          <div class="pc_navbar">-->
-  <!--              <ul>-->
-  <!--                  <li><%= link_to 'レビュー一覧', reviews_path, class: 'btn btn-lg btn-default' %></li>-->
-  <!--                  <li><%= link_to 'movie検索', new_movie_path, class: 'btn btn-lg btn-default' %></li>-->
-  <!--                  <li><%= link_to 'ランキング', rankings_like_path, class: 'btn btn-lg btn-default' %></li>-->
-  <!--                  <li><%= link_to 'ユーザー詳細', user_path(current_user), class: 'btn btn-lg btn-default', data: {"turbolinks" => false} %></li>-->
-  <!--                  <li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'btn btn-lg btn-default' %></li>-->
-  <!--              </ul>-->
-  <!--          </div>-->
-  <!--      <% else %>-->
-        
-  <!--          <div class="pc_navbar">-->
-  <!--              <ul>-->
-                    <!--<li><%= link_to '利用方法', explanation_path %></li>-->
-  <!--                  <li><%= link_to '新規登録', signup_path %></li>-->
-  <!--                  <li><%= link_to 'ログイン', login_path %></li>-->
-  <!--              </ul>-->
-  <!--          </div>-->
-  <!--      <% end %>-->
-  <!--  </div>-->
-  <div class="eigatitle_pc">映画レビュー共有サイト<br>世界中の人と映画の価値観を共有し合う</div>
-   <div class="eigatitle_sp">映画レビュー共有サイト<br>世界中の人と映画の価値観<br>を共有し合う</div>
-  
-  <div class="abc">
-   <ul>
-     <li class="aaa_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
-     <li class="aaa_sp"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
-   </ul>
- </div>
-  
-  </section>
-</div>
-<div class="setumei_pc">
-  <div id="setumei_bun_pc">利用方法</div>
-  <p class="setumeinaiyou_pc">ここではこのアプリの使い方について紹介していきます。キャッチフレーズにもありますよう,このアプリは映画レビュー共有サイトになります。
-  また世界中の人と映画の価値観を共有し、あなたが今まで出会わなかった映画と出会うことができたり、さらに新たなジャンルの映画に興味を持つことができる。そんな想いが込もったアプリになります。
-  ログインしていただきますと、映画検索、人気映画ランキング、レビュー一覧といった機能があり検索をかけることもできれば、閲覧することもできます。
-  新規登録をして頂きますと、ログイン画面がでてきますので是非ログインしてみてください。
-  <!--是非、新規登録の方をして頂き、中身をのぞいてみてください。-->
-  </p>
-</div>
-<div class="review_pc">
-  <div class="reviewname_pc">あなたにオススメの映画</div>
-  <!--<p class="youga_pc">洋画</p>-->
-  <div class="eiga_title_pc">
-    <p>アクション</p>
-  </div>
-  
-  <div class="reviewimage_pc">
-    
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga25.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga26.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga27.jpg" alt="アイテム">
-  </div>
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga28.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga29.jpg" alt="アイテム">
-  </div>
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc_one" src="images/eiga32.jpg" alt="アイテム">
-  </div>
-  
-  
- </div>
- 
- 
-</div>
-
-<div class="review_pc">
-  <!--<p class="youga_pc">洋画</p>-->
-  <div class="eiga_title_pc">
-    <p>SF</p>
-  </div>
-  
-  <div class="reviewimage_pc">
-    
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga20.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga21.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga24.jpg" alt="アイテム">
-  </div>
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
-  </div>
-   <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">
-  </div>
-  <div class="reviewgazou_pc">
-    <img class="u-max-full-width_pc_one" src="images/eiga30.jpg" alt="アイテム">
-  </div>
-  
- </div>
- 
- 
-</div>
-
-<div class="news_pc">
-  <ul>
-    <li><%= link_to 'もっと見る', explanation_path,class: 'btn btn-lg btn-danger'%></li>
-  </ul>
-</div>
-<!--<div class="review_pc">-->
-  
-  <!--<p class="youga_pc">洋画</p>-->
-<!--  <div class="eiga_title_pc">-->
-<!--    <p>ドラマ</p>-->
-<!--  </div>-->
-  
-<!--  <div class="reviewimage_pc">-->
-    
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-  
-<!-- </div>-->
- 
- 
-<!--</div>-->
-
-<!--<div class="review_pc">-->
-  
-  <!--<p class="youga_pc">洋画</p>-->
-<!--  <div class="eiga_title_pc">-->
-<!--    <p>ホラー</p>-->
-<!--  </div>-->
-  
-<!--  <div class="reviewimage_pc">-->
-    
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-  
-<!-- </div>-->
- 
- 
-<!--</div>-->
-
-<!--<div class="review_pc">-->
-  
-  <!--<p class="youga_pc">洋画</p>-->
-<!--  <div class="eiga_title_pc">-->
-<!--    <p>恋愛</p>-->
-<!--  </div>-->
-  
-<!--  <div class="reviewimage_pc">-->
-    
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">-->
-<!--  </div>-->
-  
-<!-- </div>-->
- 
- 
-<!--</div>-->
-<div class="koukoku_pc">
-  <div class="koukokuname_pc">2018年興行収入TOP10</div>
-  
-  <div class="koukokuimage_pc">
-  <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga1.jpg" alt="アイテム">
-  </div>
-   <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga2.jpg" alt="アイテム">
-  </div>
-   <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga3.jpg" alt="アイテム">
-  </div>
-  <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga4.jpg" alt="アイテム">
-  </div>
-   <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga5.jpg" alt="アイテム">
-  </div>
-  <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga6.jpg" alt="アイテム">
-  </div>
-   <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga7.jpg" alt="アイテム">
-  </div>
-  <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga8.jpg" alt="アイテム">
-  </div>
-  <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc" src="images/eiga9.jpg" alt="アイテム">
-  </div>
-   <div class="imagegazou_pc">
-    <img class="u-max-full-width_pc_two" src="images/eiga10.jpg" alt="アイテム">
-  </div>
- </div>
- 
- <div class="middle">
-   <ul>
-     <li class="middle_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
-   </ul>
- </div>
- 
-</div>
-
-<!--<div class="review_pc">-->
-<!--  <div class="reviewname_pc">レビューが多い映画</div>-->
-  
-<!--  <div class="reviewimage_pc">-->
-<!--  <div class="reviewgazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga1.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga2.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga3.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga4.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga4.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga6.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga7.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga8.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--  <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga9.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!--   <div class="imagegazou_pc">-->
-<!--    <img class="u-max-full-width_pc" src="images/eiga10.jpg" alt="アイテム">-->
-<!--  </div>-->
-<!-- </div>-->
- 
-<!-- <div class="voice_pc">新たな映画に出会ってみませんか？</div>-->
-<!--</div>-->
-
-<div class="enjoy_pc">
-  <p>特徴とメリット</p>
-  
-   <div class="container_pc">
-          <div class="skill-box_pc">
-            <div class="skill_gazou">
-            <img class="u-max_pc" src="images/gazou40.png" alt="アイテム">
-            </div>
-            <p class="shop">レンタルショップでハズレを引く確率が下がり、あなた好みの映画に出会える</p>
-          </div>
-          
-          <div class="skill-box_pc">
-            <div class="skill_gazou">
-            <img class="u-max_pc" src="images/sns.png" alt="アイテム">
-            </div>
-            <p>SNS的な交流ができ、周りの人たちのオススメを知ることができる</p>
-          </div>
-          
-          <div class="skill-box_pc">
-            <div class="skill_gazou">
-            <img class="u-max_pc" src="images/review10.png" alt="アイテム">
-            </div>
-            <p>スマホ対応されており気になる映画のレビューをその場で確認できる</p>
-          </div>
+  <div class="row">
+    <div class="character">
+      <ul>
+          <li>お気に入りされた映画</li>
+      </ul>
     </div>
+    
+      <div class="character_sp">
+        <ul>
+          <li>お気に入りされた映画</li>
+        </ul>
+      </div>
+        <%= render "movies/movies", movies: @movies %>
+  </div>
+
+<% else %>
+
+  <div id="main_visual">
+    <section class="space">
+      <div class="movie_title_pc">映画レビュー共有サイト<br>世界中の人と映画の価値観を共有し合う</div>
+        <div class="movie_title_sp">映画レビュー共有サイト<br>世界中の人と映画の価値観<br>を共有し合う</div>
+          <div class="abc">
+            <ul>
+               <li class="member_registration_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+               <li class="member_registration_sp"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+            </ul>
+          </div>
+    </section>
+  </div>
+
+  <div class="setumei_pc">
+    <div id="explanation_sentence_pc">利用方法</div>
+      <p class="explanation_merit_pc">
+        ここではこのアプリの使い方について紹介していきます。キャッチフレーズにもありますよう、このアプリは映画レビュー共有サイトになります。
+        世界中の人と映画の価値観を共有し、あなたが今まで出会わなかった映画と出会うことができたり、さらに新たなジャンルの映画に興味を持つことができる。そんな想いが込もったアプリになります。
+        また、ログインしていただきますと映画検索、人気映画ランキング、レビュー一覧といった機能があり検索をかけることもできれば、閲覧することもできます。
+        新規登録をして頂きますと、ログイン画面がでてきますので是非ログインしてみてください。
+      </p>
+  </div>
+    
+  <div class="review_pc">
+    <div class="reviewname_pc">あなたにオススメの映画</div>
+      <div class="movie_titles_pc">
+        <p>アクション</p>
+      </div>
+
+    <div class="reviewimage_pc">
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga25.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga26.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga27.jpg" alt="アイテム">
+      </div>
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga28.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga29.jpg" alt="アイテム">
+      </div>
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc_one" src="images/eiga32.jpg" alt="アイテム">
+      </div>
+    </div>
+  </div>
+
+  <div class="review_pc">
+    <div class="movie_titles_pc">
+      <p>SF</p>
+    </div>
+
+    <div class="reviewimage_pc">
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga20.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga21.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga24.jpg" alt="アイテム">
+      </div>
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga23.jpg" alt="アイテム">
+      </div>
+       <div class="Advertisement">
+        <img class="u-max-full-width_pc" src="images/eiga22.jpg" alt="アイテム">
+      </div>
+      <div class="Advertisement">
+        <img class="u-max-full-width_pc_one" src="images/eiga30.jpg" alt="アイテム">
+      </div>
+    </div>
+  </div>
   
-</div>
+
+  <div class="news_pc">
+    <ul>
+      <li><%= link_to 'もっと見る', explanation_path,class: 'btn btn-lg btn-danger'%></li>
+    </ul>
+  </div>
+
+  <div class="koukoku_pc">
+    <div class="Advertisement_pc">2018年興行収入TOP10</div>
+      <div class="koukokuimage_pc">
+        <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga1.jpg" alt="アイテム">
+        </div>
+         <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga2.jpg" alt="アイテム">
+        </div>
+         <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga3.jpg" alt="アイテム">
+        </div>
+        <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga4.jpg" alt="アイテム">
+        </div>
+         <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga5.jpg" alt="アイテム">
+        </div>
+        <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga6.jpg" alt="アイテム">
+        </div>
+         <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga7.jpg" alt="アイテム">
+        </div>
+        <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga8.jpg" alt="アイテム">
+        </div>
+        <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc" src="images/eiga9.jpg" alt="アイテム">
+        </div>
+         <div class="imagegazou_pc">
+          <img class="u-max-full-width_pc_two" src="images/eiga10.jpg" alt="アイテム">
+        </div>
+      </div>
+
+      <div class="middle">
+        <ul>
+          <li class="middle_pc"><%= link_to '新規登録', signup_path, class: 'btn btn-lg btn-danger' %></li>
+        </ul>
+      </div>
+  </div>
+
+
+
+  <div class="enjoy_pc">
+    <p>特徴とメリット</p>
+      <div class="container_pc">
+        <div class="skill-box_pc">
+          <div class="skill_gazou">
+            <img class="u-max_pc" src="images/gazou40.png" alt="アイテム">
+          </div>
+            <p class="shop">レンタルショップでハズレを引く確率が下がり、あなた好みの映画に出会える</p>
+        </div>
+
+        <div class="skill-box_pc">
+          <div class="skill_gazou">
+            <img class="u-max_pc" src="images/sns.png" alt="アイテム">
+          </div>
+            <p>SNS的な交流ができ、周りの人たちのオススメを知ることができる</p>
+        </div>
+
+        <div class="skill-box_pc">
+          <div class="skill_gazou">
+            <img class="u-max_pc" src="images/review10.png" alt="アイテム">
+          </div>
+            <p>スマホ対応されており気になる映画のレビューをその場で確認できる</p>
+        </div>
+    </div>
+  </div>
 <% end %>
 
 
-<footer>
-  <div class="contact_pc">
-    <ul>
+  <footer>
+    <div class="contact_pc">
+      <ul>
         <% if logged_in? %>
-        <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
+          <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
         <% else %>
-        <li><%= link_to '新規登録', signup_path %></li>
-        <li><%= link_to 'ログイン', login_path %></li>
-        <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
+          <li><%= link_to '新規登録', signup_path %></li>
+          <li><%= link_to 'ログイン', login_path %></li>
+          <li><a href="mailto:happy.doughnut.k0529@gmail.com">お問い合わせ</a></li>
         <% end %>
-    </ul>
-  </div>
+      </ul>
+    </div>
+  
     <div class="footer_pc">
       <div class="footer_copy">
-      &copy; 2019 Le film.
+        &copy; 2019 Le film.
       </div>
     </div>
-</footer>
-
-
-
+  </footer>

@@ -1,32 +1,30 @@
-
 <div class="text-center_pc">
-    <div class="login_pc">ログイン</div>
+  <div class="login_pc">ログイン</div>
 </div>
 
 <div class="down_pc">
-   
-        <%= form_for(:session, url: login_path) do |f| %>
+  <%= form_for(:session, url: login_path) do |f| %>
+  
+    <div class="form-group_six">
+      <label class="email" for="email">メールアドレス</label>
+      <%= f.email_field :email, class: 'form-control', id:"email" %>
+    </div>
         
-        <div class="form-group_six">
-            <!--<%= f.label :email, 'メールアドレス' %>-->
-            <label class="email" for="email">メールアドレス</label>
-            <%= f.email_field :email, class: 'form-control' %>
-        </div>
+    <div class="form-group_six">
+      <label class="password" for="password">パスワード</label>
+      <%= f.password_field :password, class: 'form-control', id:"password" %>
+    </div>
         
-        <div class="form-group_six">
-            <label class="password" for="password">パスワード</label>
-            <%= f.password_field :password, class: 'form-control' %>
-        </div>
-        
-        <div class="text-right">
-        <%= f.submit 'Log in', class: 'btn btn-danger btn-block' %>
-        </div>
+    <div class="text-right">
+    <%= f.submit 'Log in', class: 'btn btn-danger btn-block' %>
+    </div>
        
-        <% end %>
-        <div class="ppp">
-         <div class="new_user">
-           New user? <%= link_to '新規登録!!!', signup_path %>
-         </div>
-        </div>
+  <% end %>
+  
+    <div class="new_user_top">
+      <div class="new_user">
+        <%= link_to '新規登録', signup_path %>
+      </div>
     </div>
 </div>
+

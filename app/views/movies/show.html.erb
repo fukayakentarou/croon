@@ -5,12 +5,14 @@
         <div class="panel-heading text-center">
           <img src="<%= 'https://image.tmdb.org/t/p/w500/' + @movie.poster_path %>" alt="">
         </div>
+        
         <div class="panel-body">
           <p class="movie-title"><%= @movie.title %></p>
             <div class="buttons text-center">
-            <%= render 'likes/like_button', movie: @movie %>
+              <%= render 'likes/like_button', movie: @movie %>
             </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -29,27 +31,22 @@
       </div>
     </div>
   
-    <!--<aside class="asidede">-->
       <%= form_for(@review) do |f| %>
       
-      <div class="form-group">
-      <%= f.hidden_field :movie_id, value: @movie.id %>
-      </div>
-      
-      <div class="form-group">
-      <%= f.label :content, 'レビュー' %>
-      <%= f.text_area :content, class: 'form-control' %>
-      </div>
-      <div class="tokou">
-      <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
-      </div>
+        <div class="form-group">
+          <%= f.hidden_field :movie_id, value: @movie.id %>
+        </div>
+        
+        <div class="form-group">
+          <%= f.label :content, 'レビュー' %>
+          <%= f.text_area :content, class: 'form-control' %>
+        </div>
+        
+        <div class="tokou">
+          <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
+        </div>
       <% end %>
   </div> 
-    
-
-    
-    
-    
 </div>
 
 
