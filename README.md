@@ -39,27 +39,34 @@ https://lefilm-movie.herokuapp.com/
 
 ・トップページ<br>
 詳細：新規登録完了後ログインしてください。<br>
-file:///Users/fukayakentarou/Desktop/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-01-16%201.52.40.png<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 .ログイン後トップページ<br>
 詳細：ログイン後のトップページになります。中央に表示されている画像は既にログインされた方々がお気に入りした映画。<br>
-
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・レビュー一覧<br>
 詳細：レビュー一覧になります。上記同様既にログインされた方々がレビューされた映画のレビュー詳細<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・movie検索<br>
 詳細：movie検索になります。こちらは検索キーワードを入力し、検索ボタンをクリックすることによって、関連の映画が表示される<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・ランキング機能<br>
 詳細：ランキング一覧になります。こちらは、既にログインされた方々がLikeされた映画の合計Like数が最も多い映画順に表示されます。<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 
 ・ユーザー詳細<br>
 詳細：あなた自身がLikeしたお気に入りの映画が履歴として残ります。検索後にいいなと思った映画は即Likeすると良い。<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+
 
 ・Likeした映画にレビューを記述し投稿する<br>
 詳細：あなた自身が見た映画のレビューを記入しよう。レビューを記入後青色の投稿ボタンを押せば投稿完了。<br>
+![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+
 
 # 🗝その他<br>
 
