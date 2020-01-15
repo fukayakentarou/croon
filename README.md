@@ -3,17 +3,17 @@
 
 
 
-🗝概要
+🗝概要<br>
 映画好きの方々に向けたサービス。
 
 
-🗝URL：
+🗝URL：<br>
 https://lefilm-movie.herokuapp.com/
 
 
-🗝テストユーザー
-名前：けん
-メールアドレス；case@example.com
+🗝テストユーザー<br>
+名前：けん<br>
+メールアドレス；case@example.com<br>
 パスワード：1111
 
 
