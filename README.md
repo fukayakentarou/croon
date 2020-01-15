@@ -39,33 +39,33 @@ https://lefilm-movie.herokuapp.com/
 
 ・トップページ<br>
 詳細：新規登録完了後ログインしてください。<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![トップページ](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 .ログイン後トップページ<br>
 詳細：ログイン後のトップページになります。中央に表示されている画像は既にログインされた方々がお気に入りした映画。<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![ログイン後トップページ](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・レビュー一覧<br>
 詳細：レビュー一覧になります。上記同様既にログインされた方々がレビューされた映画のレビュー詳細<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![レビュー一覧](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・movie検索<br>
 詳細：movie検索になります。こちらは検索キーワードを入力し、検索ボタンをクリックすることによって、関連の映画が表示される<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![movie検索](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 ・ランキング機能<br>
 詳細：ランキング一覧になります。こちらは、既にログインされた方々がLikeされた映画の合計Like数が最も多い映画順に表示されます。<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![ランキング機能](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 
-・ユーザー詳細<br>
+・ユーザ詳細<br>
 詳細：あなた自身がLikeしたお気に入りの映画が履歴として残ります。検索後にいいなと思った映画は即Likeすると良い。<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![ユーザ詳細](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 
 ・Likeした映画にレビューを記述し投稿する<br>
 詳細：あなた自身が見た映画のレビューを記入しよう。レビューを記入後青色の投稿ボタンを押せば投稿完了。<br>
-![画像名](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
+![Likeした画像にレビューを投稿](https://github.com/quin001cunx/newRead/blob/master/sample_image.jpg)<br>
 
 
 # 🗝その他<br>
@@ -81,4 +81,4 @@ https://lefilm-movie.herokuapp.com/
 アプリを作ろうと思ったことがきっかけです。
 
 🗝工夫した点：<br>
-私は、オリジナルアプリを作成する上で、ユーザー目線に立ち作成することを常に心がけていました。  どのようなアプリなら利用したいと思うか、一目で惹かれるようなアプリにすることを心がけていました。  その中で、一番の工夫点はトップページです。  映画のレビューサイトと一目でわかるよう、キャッチコピーに映画レビュー共有サイトと記述した点。  安っぽいサイトにならないよう、ベースとして黒を使用。  スライドしていく途中で新規登録ボタンを挿入した点。  利用方法でログイン後にどのような機能があるのか説明すること。  オススメ映画、興行収入top10の映画を画像をつけて表示させることによって、この映画見てみたいと!より興 味をもってもらうことができる。 オススメ映画はジャンル別に5つずつ表示させることによって別ジャンルにも興味を持ってもらえるのではな いかと想定。  まずはログインして頂くことが必須なので、ログインしたい!と思えるようなサイト作りを心がけました。  ログイン後の機能面に関しましては、最新のAPIを用いることによって最新の映画も検索できる点。他のユーザーがお気に入りした映画も閲覧できることによって、新たな映画に興味を持つことができる点。ランキング表示をすることによって、人気の映画を知ることができる。また、レビュー一覧を表示することによって、他意見を聞くことができる。  fadein、animateを加え少しオリジナリティ動きを加えた。以上が工夫した点です。
+私は、オリジナルアプリを作成する上で、ユーザー目線に立ち作成することを常に心がけていました。<br> どのようなアプリなら利用したいと思うか、一目で惹かれるようなアプリにすることを心がけていました。その中で、一番の工夫点はトップページです。<br> 映画のレビューサイトと一目でわかるよう、キャッチコピーに映画レビュー共有サイトと記述した点。安っぽいサイトにならないよう、ベースとして黒を使用。<br>スライドしていく途中で新規登録ボタンを挿入した点。利用方法でログイン後にどのような機能があるのか説明すること。<br> オススメ映画、興行収入top10の映画を画像をつけて表示させることによって、この映画見てみたいとより興味をもってもらうことができる。<br>オススメ映画はジャンル別に5つずつ表示させることによって別ジャンルにも興味を持ってもらえるのではないかと想定。<br>まずはログインして頂くことが必須なので、ログインしたい!と思えるようなサイト作りを心がけました。<br> ログイン後の機能面に関しましては、最新のAPIを用いることによって最新の映画も検索できる点。<br>他のユーザーがお気に入りした映画も閲覧できることによって、新たな映画に興味を持つことができる点。<br>ランキング表示をすることによって、人気の映画を知ることができる。<br>また、レビュー一覧を表示することによって、他意見を聞くことができる。<br>fadein、animateを加え少しオリジナリティ動きを加えた。以上が工夫した点です。
