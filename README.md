@@ -39,7 +39,7 @@ https://lefilm-movie.herokuapp.com/
 
 ・トップページ<br>
 詳細：新規登録完了後ログインしてください。<br>
-![トップページ](https://github.com/quin001cunx/newRead/blob/master/sample_image.png)<br>
+![トップページ](img src="sample_image.png"width="320px")<br>
 
 .ログイン後トップページ<br>
 詳細：ログイン後のトップページになります。中央に表示されている画像は既にログインされた方々がお気に入りした映画。<br>
