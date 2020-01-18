@@ -54,10 +54,10 @@ Ruby, Ruby on Rails
 <img width="340" alt="スクリーンショット 2020-01-16 2 17 04" src="https://user-images.githubusercontent.com/42598773/72661760-ada7ab80-3a21-11ea-96c2-f137a6603b70.png">
 
 ### 映画Like機能
-<img src="/public/img/readme/tutorial.png">
+<img width="340" alt="スクリーンショット 2020-01-18 18 44 10" src="https://user-images.githubusercontent.com/42598773/72661849-9ddc9700-3a22-11ea-94fb-7644370ed1a5.png">
 
 ### その他
-その他の機能は実際に使用して確かめてみてください！
+実際に使用して確かめてみてください！
 
 ***
 
