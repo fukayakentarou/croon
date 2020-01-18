@@ -13,7 +13,7 @@ https://lefilm-movie.herokuapp.com/
 
 ## 使用している技術一覧
 ### フロントエンド
-HTML, CSS(Sass), Vue.js(JavaScript)
+HTML, CSS(Sass), jQuery(JavaScript)
 ### バックエンド
 Ruby, Ruby on Rails
 
