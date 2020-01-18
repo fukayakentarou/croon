@@ -36,10 +36,11 @@ Ruby, Ruby on Rails
 <img width="340" alt="スクリーンショット 2020-01-16 2 01 49" src="https://user-images.githubusercontent.com/42598773/72661672-67058180-3a20-11ea-8c20-01e69ca9740a.png">
 
 ### 映画ランキング一覧
-<img src="/public/img/readme/find-events-from-date.png">
+
 
 ### 映画検索
-<img src="/public/img/readme/find-events-from-place.png">
+<img width="340" alt="スクリーンショット 2020-01-16 2 10 28" src="https://user-images.githubusercontent.com/42598773/72661725-235f4780-3a21-11ea-806a-072536be7f2f.png">
+
 
 ### 映画レビュー一覧
 <img src="/public/img/readme/diagnose-events.png">
