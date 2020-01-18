@@ -30,7 +30,7 @@ Ruby, Ruby on Rails
 
 ## 主要な機能の解説
 ### 新規登録
-<<img width="340" alt="スクリーンショット 2020-01-16 2 01 49" src="https://user-images.githubusercontent.com/42598773/72661672-67058180-3a20-11ea-8c20-01e69ca9740a.png">
+<img width="340" alt="スクリーンショット 2020-01-16 2 01 49" src="https://user-images.githubusercontent.com/42598773/72661672-67058180-3a20-11ea-8c20-01e69ca9740a.png">
 
 ### ログイン後トップページ
 <img src="/public/img/readme/event-details.png">
