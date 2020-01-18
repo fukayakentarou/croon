@@ -42,11 +42,11 @@ Ruby, Ruby on Rails
 <img width="340" alt="スクリーンショット 2020-01-16 2 10 28" src="https://user-images.githubusercontent.com/42598773/72661725-235f4780-3a21-11ea-806a-072536be7f2f.png">
 
 ### 映画検索結果
-<img width="1438" alt="スクリーンショット 2020-01-16 2 10 52" src="https://user-images.githubusercontent.com/42598773/72661733-45f16080-3a21-11ea-8860-86deed40022d.png">
+<img width="340" alt="スクリーンショット 2020-01-16 2 10 52" src="https://user-images.githubusercontent.com/42598773/72661733-45f16080-3a21-11ea-8860-86deed40022d.png">
 
 
 ### 映画レビュー一覧
-<img src="/public/img/readme/diagnose-events.png">
+<img width="340" alt="スクリーンショット 2020-01-16 2 05 34" src="https://user-images.githubusercontent.com/42598773/72661752-8cdf5600-3a21-11ea-9e4b-94487d7b347a.png">
 
 ### レビュー投稿
 <img src="/public/img/readme/post-and-inquiry.png">
