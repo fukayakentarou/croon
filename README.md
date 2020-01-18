@@ -30,6 +30,7 @@ Ruby, Ruby on Rails
 
 ## 主要な機能の解説
 ### 新規登録
+<img width="1169" alt="sample_image" src="https://user-images.githubusercontent.com/42598773/72661773-d62fa580-3a21-11ea-91a6-ce25575d76b3.png">
 
 
 ### ログイン後トップページ
