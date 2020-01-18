@@ -49,7 +49,8 @@ Ruby, Ruby on Rails
 <img width="340" alt="スクリーンショット 2020-01-16 2 05 34" src="https://user-images.githubusercontent.com/42598773/72661752-8cdf5600-3a21-11ea-9e4b-94487d7b347a.png">
 
 ### レビュー投稿
-<img src="/public/img/readme/post-and-inquiry.png">
+<img width="1438" alt="スクリーンショット 2020-01-16 2 17 04" src="https://user-images.githubusercontent.com/42598773/72661760-ada7ab80-3a21-11ea-96c2-f137a6603b70.png">
+
 
 ### 映画Like機能
 <img src="/public/img/readme/tutorial.png">
