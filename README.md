@@ -30,31 +30,42 @@ Ruby, Ruby on Rails
 
 ## 主要な機能の解説
 ### 新規登録
-<img width="1169" alt="sample_image" src="https://user-images.githubusercontent.com/42598773/72661773-d62fa580-3a21-11ea-91a6-ce25575d76b3.png">
-
+<img width="440" alt="sample_image" src="https://user-images.githubusercontent.com/42598773/72661773-d62fa580-3a21-11ea-91a6-ce25575d76b3.png">
+新規登録後、ログインして下さい。
 
 ### ログイン後トップページ
-<img width="340" alt="スクリーンショット 2020-01-16 2 01 49" src="https://user-images.githubusercontent.com/42598773/72661672-67058180-3a20-11ea-8c20-01e69ca9740a.png">
+<img width="440" alt="スクリーンショット 2020-01-16 2 01 49" src="https://user-images.githubusercontent.com/42598773/72661672-67058180-3a20-11ea-8c20-01e69ca9740a.png">
+ログイン後のトップページになります。中央に表示されている映画は、既にログインされた方々がLikeした映画になります。
 
 ### 映画ランキング一覧
-<img width="340" alt="スクリーンショット 2020-01-18 18 42 06" src="https://user-images.githubusercontent.com/42598773/72661816-4ccca300-3a22-11ea-9d7a-2b4cd1c62827.png">
-
+<img width="440" alt="スクリーンショット 2020-01-18 18 42 06" src="https://user-images.githubusercontent.com/42598773/72661816-4ccca300-3a22-11ea-9d7a-2b4cd1c62827.png">
+ランキング一覧になります。サイトに訪れた全てのユーザがLikeした映画が自動反映されます。
+また、2Like.1Likeのように昇順に表示されるようになっております。
 
 ### 映画検索
-<img width="340" alt="スクリーンショット 2020-01-16 2 10 28" src="https://user-images.githubusercontent.com/42598773/72661725-235f4780-3a21-11ea-806a-072536be7f2f.png">
+<img width="440" alt="スクリーンショット 2020-01-16 2 10 28" src="https://user-images.githubusercontent.com/42598773/72661725-235f4780-3a21-11ea-806a-072536be7f2f.png">
+こちらで映画を検索をしてください。
+また、観たい映画の正式名称がわからない場合、最初の頭文字、もしくはわかる部分まで入力して頂くと、ヒットする可能性ございます。
+
 
 ### 映画検索結果
-<img width="340" alt="スクリーンショット 2020-01-16 2 10 52" src="https://user-images.githubusercontent.com/42598773/72661733-45f16080-3a21-11ea-8860-86deed40022d.png">
-
+<img width="440" alt="スクリーンショット 2020-01-16 2 10 52" src="https://user-images.githubusercontent.com/42598773/72661733-45f16080-3a21-11ea-8860-86deed40022d.png">
+上記の検索に対してヒットした映画が表示されます。
 
 ### 映画レビュー一覧
-<img width="340" alt="スクリーンショット 2020-01-16 2 05 34" src="https://user-images.githubusercontent.com/42598773/72661752-8cdf5600-3a21-11ea-9e4b-94487d7b347a.png">
+<img width="440" alt="スクリーンショット 2020-01-16 2 05 34" src="https://user-images.githubusercontent.com/42598773/72661752-8cdf5600-3a21-11ea-9e4b-94487d7b347a.png">
+レビュー一覧になります。
+既存のユーザの方が閲覧した映画に対してのレビューを投稿した場合こちらに表示される。
+また、自分自身が更新したレビューも表示され、こちらで編集や消去が可能。
 
 ### レビュー投稿
-<img width="340" alt="スクリーンショット 2020-01-16 2 17 04" src="https://user-images.githubusercontent.com/42598773/72661760-ada7ab80-3a21-11ea-96c2-f137a6603b70.png">
+<img width="440" alt="スクリーンショット 2020-01-16 2 17 04" src="https://user-images.githubusercontent.com/42598773/72661760-ada7ab80-3a21-11ea-96c2-f137a6603b70.png">
+閲覧した映画に対しての感想はこちらの画面から記入ください。
 
 ### 映画Like機能
-<img width="340" alt="スクリーンショット 2020-01-18 18 44 10" src="https://user-images.githubusercontent.com/42598773/72661849-9ddc9700-3a22-11ea-94fb-7644370ed1a5.png">
+<img width="440" alt="スクリーンショット 2020-01-18 18 44 10" src="https://user-images.githubusercontent.com/42598773/72661849-9ddc9700-3a22-11ea-94fb-7644370ed1a5.png">
+「Like it」青いボタンを押していただくとお気に入りできます。また、自分自身がお気に入りした映画はユーザ詳細画面にも反映される。
+間違えてLikeしてしまった場合は「Unlike」ボタンを押してLikeを解除可能。
 
 ### その他
 実際に使用して確かめてみてください！
