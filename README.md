@@ -41,6 +41,8 @@ Ruby, Ruby on Rails
 ### 映画検索
 <img width="340" alt="スクリーンショット 2020-01-16 2 10 28" src="https://user-images.githubusercontent.com/42598773/72661725-235f4780-3a21-11ea-806a-072536be7f2f.png">
 
+### 映画検索結果
+
 
 ### 映画レビュー一覧
 <img src="/public/img/readme/diagnose-events.png">
